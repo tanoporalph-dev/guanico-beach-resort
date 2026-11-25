@@ -1,0 +1,4270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#027373">
+<title>Guánico Beach Resort in Panama | Beachfront Hotel, Surf & Adventure</title>
+<meta name="description" content="Discover Guánico Beach Resort in Playa Guánico, Tonosí, Los Santos, Panama. Beachfront accommodation, surfing, wellness, wood-fired dining and private retreats on the Azuero Peninsula.">
+<meta name="keywords" content="Guánico Beach Resort in Panama, Playa Guánico hotel, Tonosí surf resort, Azuero Peninsula beachfront accommodation, Los Santos Panama">
+<meta name="robots" content="index, follow">
+<meta name="geo.region" content="PA-7">
+<meta name="geo.placename" content="Playa Guánico, Tonosí, Los Santos, Panama">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Guánico Beach Resort in Panama">
+<meta property="og:description" content="Discover a different side of Panama. Oceanfront stays, surf, wellness and authentic adventures.">
+<meta property="og:image" content="guanico-logo.png">
+<link rel="icon" href="guanico-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+<!--
+UPDATED VIDEO ARCHITECTURE
+
+Place these files in the same folder:
+index.html
+booking.html
+dining.html
+guanico-logo.png
+guanico-1.mp4
+guanico-2.mp4
+guanico-3.mp4
+guanico-4.mp4
+guanico-5.mp4
+guanico-6.mp4
+
+No video scroll-scrubbing.
+No continuous currentTime updates.
+Only the active video and incoming transition video play.
+Inactive videos are paused.
+Two reusable video layers minimize decoding overhead.
+Three.js loads only when the visitor requests 3D mode.
+Responsive card positioning prevents left-side clipping.
+
+The 3D scene is a stylized resort representation.
+Guest feedback cards summarize owner-reported feedback.
+Confirm updated accommodation inventory before publishing.
+Browser performance and local media files have not been tested.
+-->
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Guánico Beach Resort in Panama",
+    "alternateName": ["Guanico Beach Resort", "Surf Camp Guanico"],
+    "description": "Boutique beachfront resort offering accommodation, surfing, wellness and dining on Panama's Azuero Peninsula.",
+    "telephone": "+50767725404",
+    "foundingDate": "2014",
+    "checkinTime": "15:00",
+    "checkoutTime": "12:00",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Playa Guánico",
+        "addressLocality": "Tonosí",
+        "addressRegion": "Los Santos",
+        "addressCountry": "PA"
+    },
+    "amenityFeature": [
+        {"@type":"LocationFeatureSpecification","name":"Beachfront accommodation","value":true},
+        {"@type":"LocationFeatureSpecification","name":"Saltwater pool","value":true},
+        {"@type":"LocationFeatureSpecification","name":"Yoga deck","value":true},
+        {"@type":"LocationFeatureSpecification","name":"Free Demo Surfboard Program","value":true},
+        {"@type":"LocationFeatureSpecification","name":"Restaurant","value":true}
+    ],
+    "containsPlace": {
+        "@type": "Restaurant",
+        "name": "Palmeras Restaurant",
+        "servesCuisine": "International"
+    },
+    "areaServed": ["Playa Guánico","Tonosí","Los Santos","Azuero Peninsula","Panama"]
+}
+</script>
+
+<style>
+:root {
+    --ocean: #027373;
+    --seafoam: #16D798;
+    --olive: #7C931C;
+    --sand: #FFF7F3;
+    --ink: #013b3b;
+    --deep: #012f30;
+    --header-height: 88px;
+    --safe-left: max(24px, env(safe-area-inset-left));
+    --safe-right: max(24px, env(safe-area-inset-right));
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--header-height) + 24px);
+}
+
+body {
+    margin: 0;
+    background: var(--deep);
+    color: var(--sand);
+    font-family: "DM Sans", Arial, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,p {
+    margin: 0;
+}
+
+h1,h2,h3 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 500;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,select {
+    font: inherit;
+    cursor: pointer;
+}
+
+button,a,select,summary {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+button:disabled {
+    cursor: default;
+    opacity: .4;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+:focus-visible {
+    outline: 3px solid var(--seafoam);
+    outline-offset: 4px;
+}
+
+::selection {
+    background: var(--seafoam);
+    color: var(--ink);
+}
+
+.container-custom {
+    width: min(1320px, 90%);
+    margin-inline: auto;
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+.eyebrow::before {
+    content: "";
+    width: 24px;
+    height: 2px;
+    background: var(--olive);
+    flex-shrink: 0;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 13px;
+    background: var(--olive);
+    border-radius: 100px;
+    color: var(--sand);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    max-width: 100%;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 45px;
+    padding: 12px 23px;
+    border-radius: 100px;
+    border: 1px solid transparent;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+    transition: transform .25s, background .25s, box-shadow .25s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-primary {
+    background: var(--seafoam);
+    color: var(--ink);
+}
+
+.btn-primary:hover {
+    background: #60edbc;
+    box-shadow: 0 10px 35px #16d79830;
+}
+
+.btn-outline {
+    color: var(--sand);
+    border-color: #fff7f355;
+    background: #02737330;
+}
+
+.btn-outline:hover {
+    background: var(--ocean);
+}
+
+/* =========================================
+   SHARED HEADER
+========================================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    min-height: var(--header-height);
+    background: rgba(2,115,115,.94);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+    border-bottom: 1px solid #7c931c80;
+}
+
+.header-inner {
+    width: min(1480px,94%);
+    min-height: var(--header-height);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    min-width: 0;
+}
+
+.logo-pill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--sand);
+    border-radius: 100px;
+    padding: 9px 16px;
+    flex-shrink: 0;
+}
+
+.logo-pill img {
+    width: 100px;
+    height: 44px;
+    object-fit: contain;
+}
+
+.brand-title {
+    max-width: 180px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.desktop-nav a {
+    font-size: 13px;
+    color: #fff7f3d9;
+}
+
+.desktop-nav a:hover,
+.desktop-nav a[aria-current="page"] {
+    color: var(--seafoam);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.language-select {
+    color: var(--sand);
+    background: #013b3b55;
+    border: 1px solid #fff7f340;
+    border-radius: 100px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.language-select option {
+    background: var(--sand);
+    color: var(--ink);
+}
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    color: var(--sand);
+    border: 0;
+    font-size: 25px;
+    padding: 8px;
+}
+
+.mobile-nav {
+    display: none;
+    padding: 12px 5% 24px;
+    border-top: 1px solid #ffffff20;
+}
+
+.mobile-nav.open {
+    display: grid;
+    gap: 16px;
+}
+
+/* =========================================
+   OPTIMIZED SIX-CLIP VIDEO TOUR
+========================================= */
+
+.tour-section {
+    position: relative;
+    background: var(--ocean);
+}
+
+.tour-stage {
+    position: sticky;
+    top: var(--header-height);
+    height: calc(100vh - var(--header-height));
+    height: calc(100svh - var(--header-height));
+    min-height: 380px;
+    overflow: hidden;
+    isolation: isolate;
+    background: linear-gradient(
+        180deg,
+        #e3ad77,
+        #027373 65%,
+        #013b3b
+    );
+}
+
+.scroll-chapters {
+    position: relative;
+    pointer-events: none;
+    margin-top: calc(-100vh + var(--header-height));
+    margin-top: calc(-100svh + var(--header-height));
+}
+
+.scroll-chapter {
+    height: 100vh;
+    height: 100svh;
+}
+
+.video-stack,
+.video-layer,
+#world {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-stack {
+    z-index: 0;
+    overflow: hidden;
+    background: var(--ocean);
+}
+
+.video-layer {
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .65s ease-in-out;
+    background: transparent;
+}
+
+.video-layer.visible {
+    opacity: 1;
+}
+
+#world {
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .65s ease;
+}
+
+#world canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.three-mode #world {
+    opacity: 1;
+}
+
+.cinematic-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    background:
+        linear-gradient(90deg,#012f3065,transparent 85%),
+        linear-gradient(0deg,#012f30c0,transparent 55%),
+        linear-gradient(180deg,#012f3045,transparent 30%);
+}
+
+.tour-topbar {
+    position: absolute;
+    z-index: 10;
+    top: 26px;
+    left: var(--safe-left);
+    right: var(--safe-right);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.location-label {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 11px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+.live-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--seafoam);
+    box-shadow: 0 0 15px var(--seafoam);
+    flex-shrink: 0;
+}
+
+.mode-switch {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: #013b3bb5;
+    border: 1px solid #fff7f340;
+    border-radius: 100px;
+    padding: 5px;
+}
+
+.mode-btn {
+    border: 0;
+    background: transparent;
+    color: var(--sand);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 100px;
+}
+
+.mode-btn.active {
+    background: var(--seafoam);
+    color: var(--ink);
+}
+
+/* =========================================
+   FIXED FLOATING CARD SAFE MARGINS
+
+   No negative horizontal translations.
+   No negative margins.
+   Card width respects both screen edges.
+   Text can wrap in all five languages.
+========================================= */
+
+.tour-cards {
+    position: absolute;
+    z-index: 5;
+    left: max(6%, var(--safe-left));
+    right: max(18%, var(--safe-right));
+    bottom: 112px;
+    width: auto;
+    max-width: 540px;
+    min-width: 0;
+    display: grid;
+    align-items: end;
+}
+
+.tour-card {
+    grid-area: 1 / 1;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    max-height: calc(100svh - var(--header-height) - 205px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+    padding: clamp(24px,3vw,42px);
+    border-radius: 24px;
+    background: linear-gradient(
+        145deg,
+        rgba(2,115,115,.88),
+        rgba(1,59,59,.94)
+    );
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid #7c931caa;
+    box-shadow: 0 20px 65px #001b1b40;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(14px);
+    pointer-events: none;
+    transition:
+        opacity .45s ease,
+        transform .45s ease,
+        visibility .45s;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    hyphens: auto;
+}
+
+.tour-card.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.tour-card h1,
+.tour-card h2 {
+    font-size: clamp(32px,4vw,58px);
+    line-height: 1.1;
+    letter-spacing: -1.2px;
+    margin: 18px 0;
+    max-width: 100%;
+}
+
+.tour-card p {
+    font-size: 14px;
+    line-height: 1.85;
+    color: #fff7f3e0;
+    max-width: 100%;
+}
+
+.card-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.card-actions > * {
+    max-width: 100%;
+}
+
+.tour-navigation {
+    position: absolute;
+    z-index: 10;
+    right: var(--safe-right);
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 18px;
+}
+
+.stop-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 13px;
+    color: #fff7f3d0;
+    background: transparent;
+    border: 0;
+    font-size: 11px;
+    text-align: right;
+    min-height: 24px;
+}
+
+.stop-dot {
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--sand);
+    border-radius: 50%;
+    flex-shrink: 0;
+    transition: all .3s;
+}
+
+.stop-button.active {
+    color: var(--seafoam);
+}
+
+.stop-button.active .stop-dot {
+    background: var(--seafoam);
+    border-color: var(--seafoam);
+    box-shadow: 0 0 0 5px #16d79825;
+}
+
+.tour-bottom {
+    position: absolute;
+    z-index: 10;
+    bottom: 24px;
+    left: var(--safe-left);
+    right: var(--safe-right);
+}
+
+.progress-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.progress-track {
+    height: 3px;
+    border-radius: 10px;
+    background: #fff7f340;
+    overflow: hidden;
+}
+
+#progress-fill {
+    height: 100%;
+    width: 16.6667%;
+    background: var(--seafoam);
+    border-radius: 10px;
+    transition: width .55s ease;
+}
+
+.tour-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.control-btn {
+    background: #013b3b80;
+    border: 1px solid #fff7f340;
+    color: var(--sand);
+    border-radius: 100px;
+    padding: 8px 15px;
+    font-size: 12px;
+}
+
+.scroll-hint {
+    font-size: 11px;
+    opacity: .85;
+}
+
+.media-notice {
+    position: absolute;
+    top: 90px;
+    right: var(--safe-right);
+    left: var(--safe-left);
+    z-index: 15;
+    width: fit-content;
+    max-width: 380px;
+    margin-left: auto;
+    padding: 14px 18px;
+    border-radius: 14px;
+    background: var(--ink);
+    border: 1px solid var(--olive);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.media-notice button {
+    margin-top: 10px;
+}
+
+/* =========================================
+   RESORT HIGHLIGHTS
+========================================= */
+
+.intro-strip {
+    padding: 35px 0;
+    background: var(--ocean);
+    border-bottom: 1px solid #ffffff15;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.intro-item {
+    padding: 10px 20px;
+    text-align: center;
+    border-right: 1px solid #ffffff25;
+}
+
+.intro-item:last-child {
+    border: 0;
+}
+
+.intro-item strong {
+    display: block;
+    color: var(--seafoam);
+    font-family: "Playfair Display",Georgia,serif;
+    font-size: clamp(26px,3vw,42px);
+    font-weight: 500;
+}
+
+.intro-item span {
+    display: block;
+    margin-top: 7px;
+    font-size: 12px;
+    opacity: .85;
+}
+
+/* =========================================
+   SHARED EDITORIAL SECTIONS
+========================================= */
+
+.section {
+    padding: clamp(70px,9vw,140px) 0;
+}
+
+.section-heading {
+    font-size: clamp(36px,5vw,68px);
+    line-height: 1.12;
+    letter-spacing: -1.7px;
+    margin: 20px 0 25px;
+}
+
+.section-copy {
+    color: #fff7f3bb;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.center-heading {
+    max-width: 760px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.about-section {
+    background:
+        radial-gradient(ellipse at 0% 0%,#02737365,transparent 60%),
+        var(--deep);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(40px,7vw,100px);
+    align-items: center;
+}
+
+.about-copy p + p {
+    margin-top: 20px;
+}
+
+.about-art {
+    position: relative;
+    min-height: 450px;
+    overflow: hidden;
+    border-radius: 220px 220px 24px 24px;
+    border: 1px solid var(--olive);
+    background: linear-gradient(
+        180deg,
+        #e7b48a 0%,
+        #f2c99d 38%,
+        #027373 39%,
+        #035454 78%,
+        #d4b98e 79%
+    );
+}
+
+.about-art video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-art::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg,#012f30a0,transparent 65%);
+    pointer-events: none;
+}
+
+.art-caption {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    z-index: 2;
+}
+
+.art-caption h3 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.art-caption p {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+.story-timeline {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 32px;
+}
+
+.timeline-item {
+    padding-top: 18px;
+    border-top: 2px solid var(--olive);
+}
+
+.timeline-year {
+    color: var(--seafoam);
+    font-family: "Playfair Display",Georgia,serif;
+    font-size: 35px;
+}
+
+.timeline-item p {
+    margin-top: 7px;
+    color: #fff7f3b0;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.experiences-section {
+    background: var(--ocean);
+}
+
+.experience-grid,
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 22px;
+}
+
+.experience-card,
+.testimonial-card {
+    padding: 35px;
+    background: #013b3b70;
+    border: 1px solid #7c931c90;
+    border-radius: 22px;
+}
+
+.experience-card {
+    transition: transform .3s;
+}
+
+.experience-card:hover {
+    transform: translateY(-6px);
+}
+
+.experience-number {
+    color: var(--seafoam);
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.experience-card h3,
+.testimonial-card h3 {
+    font-size: 29px;
+    margin: 24px 0 14px;
+}
+
+.experience-card p,
+.testimonial-card p {
+    font-size: 14px;
+    color: #fff7f3bb;
+    line-height: 1.8;
+}
+
+.experience-card a {
+    display: inline-flex;
+    margin-top: 24px;
+    color: var(--seafoam);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* FAQ */
+
+.faq-section {
+    background: var(--deep);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 70px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #7c931c65;
+}
+
+.faq-item:first-child {
+    border-top: 1px solid #7c931c65;
+}
+
+.faq-item summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 25px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    color: var(--seafoam);
+    font-size: 25px;
+    flex-shrink: 0;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+.faq-answer {
+    padding: 0 25px 25px 0;
+    font-size: 14px;
+    color: #fff7f3bb;
+    line-height: 1.9;
+}
+
+/* TESTIMONIALS */
+
+.testimonials-section {
+    background:
+        radial-gradient(ellipse at center,#027373,transparent 90%),
+        var(--deep);
+    border-top: 1px solid #ffffff10;
+}
+
+.feedback-index {
+    color: var(--seafoam);
+    font-family: "Playfair Display",Georgia,serif;
+    font-size: 36px;
+}
+
+.feedback-disclosure {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff7f3a0;
+}
+
+/* FINAL CTA */
+
+.final-cta {
+    padding: 110px 5%;
+    text-align: center;
+    background:
+        radial-gradient(ellipse at 50% 0%,#027373,transparent 85%),
+        var(--deep);
+}
+
+.final-cta h2 {
+    max-width: 900px;
+    margin: 20px auto;
+    font-size: clamp(40px,6vw,85px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+}
+
+.final-cta p {
+    max-width: 560px;
+    margin: auto;
+    line-height: 1.8;
+    color: #fff7f3bb;
+}
+
+.final-cta .card-actions {
+    justify-content: center;
+    margin-top: 35px;
+}
+
+/* FOOTER */
+
+.site-footer {
+    padding: 55px 0 25px;
+    background: #012829;
+    border-top: 1px solid #7c931c55;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 45px;
+}
+
+.footer-logo {
+    display: inline-flex;
+    margin-bottom: 22px;
+}
+
+.footer-logo img {
+    width: 120px;
+    height: 60px;
+}
+
+.footer-title {
+    font-family: "DM Sans",Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.footer-links {
+    display: grid;
+    gap: 12px;
+    font-size: 13px;
+    color: #fff7f3b0;
+}
+
+.footer-description {
+    font-size: 13px;
+    color: #fff7f3b0;
+    line-height: 1.9;
+}
+
+.footer-bottom {
+    margin-top: 45px;
+    padding-top: 24px;
+    border-top: 1px solid #ffffff15;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    color: #fff7f380;
+    font-size: 11px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 90;
+    width: 51px;
+    height: 51px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--seafoam);
+    color: var(--ink);
+    box-shadow: 0 10px 35px #001b1b50;
+    transition: transform .25s;
+}
+
+.whatsapp-float svg {
+    width: 25px;
+    height: 25px;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-4px);
+}
+
+/* =========================================
+   RESPONSIVE LAYOUT
+========================================= */
+
+@media (max-width:1100px) {
+    .desktop-nav {
+        gap: 15px;
+    }
+
+    .brand-title {
+        max-width: 135px;
+        font-size: 11px;
+    }
+
+    .stop-label {
+        display: none;
+    }
+
+    .tour-cards {
+        right: max(70px,var(--safe-right));
+    }
+}
+
+@media (max-width:850px) {
+    :root {
+        --header-height: 76px;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .header-inner {
+        gap: 12px;
+    }
+
+    .logo-pill img {
+        width: 82px;
+        height: 35px;
+    }
+
+    .about-grid,
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .experience-grid,
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-art {
+        min-height: 380px;
+        max-width: 550px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-grid > :first-child {
+        grid-column: 1 / -1;
+    }
+
+    .whatsapp-float {
+        width: 44px;
+        height: 44px;
+        bottom: 14px;
+        right: 14px;
+    }
+}
+
+@media (max-width:600px) {
+    :root {
+        --safe-left: max(16px,env(safe-area-inset-left));
+        --safe-right: max(16px,env(safe-area-inset-right));
+    }
+
+    .brand-title {
+        display: none;
+    }
+
+    .header-actions {
+        gap: 6px;
+    }
+
+    .header-actions .btn {
+        padding: 10px 14px;
+        min-height: 39px;
+        font-size: 11px;
+    }
+
+    .tour-topbar {
+        top: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .location-label {
+        font-size: 9px;
+    }
+
+    .tour-cards {
+        left: var(--safe-left);
+        right: var(--safe-right);
+        bottom: 128px;
+        width: auto;
+        max-width: none;
+    }
+
+    .tour-card {
+        padding: 22px;
+        border-radius: 20px;
+        max-height: calc(100svh - var(--header-height) - 245px);
+    }
+
+    .tour-card h1,
+    .tour-card h2 {
+        font-size: clamp(27px,7.5vw,40px);
+        letter-spacing: -.5px;
+        margin: 13px 0;
+    }
+
+    .tour-card p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .card-actions {
+        gap: 8px;
+        margin-top: 18px;
+    }
+
+    .card-actions .btn {
+        min-height: 40px;
+        padding: 10px 15px;
+        font-size: 11px;
+    }
+
+    .tour-navigation {
+        top: auto;
+        bottom: 94px;
+        left: var(--safe-left);
+        right: var(--safe-right);
+        transform: none;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .stop-button {
+        padding: 5px;
+    }
+
+    .tour-bottom {
+        bottom: 22px;
+    }
+
+    .tour-controls {
+        padding-right: 40px;
+    }
+
+    .scroll-hint {
+        display: none;
+    }
+
+    .intro-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 0;
+    }
+
+    .intro-item:nth-child(2) {
+        border: 0;
+    }
+
+    .section-copy {
+        font-size: 14px;
+    }
+
+    .experience-card,
+    .testimonial-card {
+        padding: 26px;
+    }
+
+    .final-cta {
+        padding: 80px 5%;
+    }
+
+    .footer-grid {
+        gap: 28px;
+    }
+}
+
+@media (max-width:360px) {
+    .logo-pill {
+        padding: 8px 10px;
+    }
+
+    .logo-pill img {
+        width: 65px;
+    }
+
+    .header-actions .btn {
+        padding: 9px 10px;
+    }
+
+    .tour-card {
+        padding: 17px;
+    }
+}
+
+@media (max-height:650px) {
+    .tour-card {
+        padding: 18px;
+    }
+
+    .tour-card h1,
+    .tour-card h2 {
+        font-size: 29px;
+        margin: 10px 0;
+    }
+
+    .tour-card p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .card-actions {
+        margin-top: 12px;
+    }
+}
+
+@media (max-height:450px) {
+    .tour-stage {
+        min-height: 0;
+    }
+
+    .tour-topbar {
+        top: 8px;
+    }
+
+    .tour-cards {
+        bottom: 65px;
+    }
+
+    .tour-card {
+        max-height: calc(100svh - var(--header-height) - 130px);
+    }
+
+    .tour-bottom {
+        bottom: 8px;
+    }
+
+    .tour-navigation {
+        display: none;
+    }
+
+    .progress-meta,
+    .scroll-hint {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion:reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,*::before,*::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header" id="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="brand">
+            <span class="logo-pill">
+                <img src="guanico-logo.png" alt="Guánico Beach Resort in Panama">
+            </span>
+            <span class="brand-title">
+                Guánico Beach Resort in Panama
+            </span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Main navigation">
+            <a href="index.html" aria-current="page" data-i18n="home">Home</a>
+            <a href="#tour" data-i18n="tour">The Experience</a>
+            <a href="#about" data-i18n="about">About Us</a>
+            <a href="dining.html" data-i18n="dining">Dining</a>
+            <a href="booking.html" data-i18n="stay">Stay With Us</a>
+        </nav>
+
+        <div class="header-actions">
+            <select id="language-switcher" class="language-select" aria-label="Select language">
+                <option value="en">EN</option>
+                <option value="es">ES</option>
+                <option value="fr">FR</option>
+                <option value="de">DE</option>
+                <option value="pt">PT</option>
+            </select>
+
+            <a href="booking.html" class="btn btn-primary" data-i18n="book">Book Now</a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav">☰</button>
+        </div>
+    </div>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+        <a href="index.html" data-i18n="home">Home</a>
+        <a href="#tour" data-i18n="tour">The Experience</a>
+        <a href="#about" data-i18n="about">About Us</a>
+        <a href="dining.html" data-i18n="dining">Dining</a>
+        <a href="booking.html" data-i18n="stay">Stay With Us</a>
+    </nav>
+</header>
+
+<main>
+
+<!-- =========================================
+     SIX-STOP VIDEO WALKTHROUGH
+========================================= -->
+
+<section id="tour" class="tour-section" aria-label="Interactive resort walkthrough">
+
+    <div class="tour-stage" id="tour-stage">
+
+        <!--
+            TWO REUSABLE VIDEO PLAYERS
+
+            All six source files use these two layers.
+            Only two videos can decode during a crossfade.
+            The outgoing video pauses after the transition.
+        -->
+
+        <div class="video-stack" id="video-stack" aria-hidden="true">
+
+            <video
+                id="video-a"
+                class="video-layer visible"
+                src="guanico-1.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+                preload="auto"
+                disablepictureinpicture>
+            </video>
+
+            <video
+                id="video-b"
+                class="video-layer"
+                autoplay
+                loop
+                muted
+                playsinline
+                preload="none"
+                disablepictureinpicture>
+            </video>
+
+        </div>
+
+        <div id="world" aria-hidden="true"></div>
+
+        <div class="cinematic-overlay"></div>
+
+        <div class="tour-topbar">
+            <div class="location-label">
+                <span class="live-dot"></span>
+                Playa Guánico · Tonosí · Panamá
+            </div>
+
+            <div class="mode-switch" role="group" aria-label="Tour viewing mode">
+                <button id="mode-video" class="mode-btn active" aria-pressed="true" data-i18n="modeVideo">
+                    Real Video
+                </button>
+                <button id="mode-3d" class="mode-btn" aria-pressed="false" data-i18n="mode3d">
+                    3D Experience
+                </button>
+            </div>
+        </div>
+
+        <div class="media-notice" id="media-notice" role="status" hidden>
+            <p id="media-message"></p>
+            <button id="retry-media" class="btn btn-primary" data-i18n="retry">Try Again</button>
+        </div>
+
+        <div class="tour-cards">
+
+            <!-- STOP 01 — GUANICO SIGN BOARD -->
+
+            <article class="tour-card active" data-stop="0">
+                <span class="badge" data-i18n="s1badge">01 / Our Heritage</span>
+
+                <h1 data-i18n="s1title">
+                    At the end of the road, life begins.
+                </h1>
+
+                <p data-i18n="s1body">
+                    Welcome to Guánico Beach Resort in Panama.
+                    Born as a surf camp in 2014 and reimagined
+                    in 2024, our boutique beachfront escape
+                    invites you to slow down, reconnect with
+                    nature and discover the authentic Azuero Peninsula.
+                </p>
+
+                <div class="card-actions">
+                    <button id="start-tour" class="btn btn-primary" data-i18n="startVideo">Start Resort Tour</button>
+                    <a href="#about" class="btn btn-outline" data-i18n="story">Our Story</a>
+                </div>
+            </article>
+
+            <!-- STOP 02 — POOL AND SURFBOARDS -->
+
+            <article class="tour-card" data-stop="1" inert aria-hidden="true">
+                <span class="badge" data-i18n="s2badge">02 / Wellness & Surf</span>
+
+                <h2 data-i18n="s2title">Find your natural rhythm.</h2>
+
+                <p data-i18n="s2body">
+                    Refresh in our saltwater pool, reset in the
+                    cold-plunge tub, unwind on the yoga deck
+                    and discover your next favorite board
+                    through our Free Demo Surfboard Program.
+                </p>
+
+                <div class="card-actions">
+                    <a href="#experiences" class="btn btn-primary" data-i18n="activities">Explore Activities</a>
+                    <a href="booking.html" class="btn btn-outline" data-i18n="book">Book Now</a>
+                </div>
+            </article>
+
+            <!-- STOP 03 — ROOMS DRONE -->
+
+            <article class="tour-card" data-stop="2" inert aria-hidden="true">
+                <span class="badge" data-i18n="s3badge">03 / Stay by the Ocean</span>
+
+                <h2 data-i18n="s3title">Wake up somewhere extraordinary.</h2>
+
+                <p data-i18n="s3body">
+                    Discover 14 sea-view rooms and cabanas,
+                    plus 2 self-catering apartments.
+                    Comfortable spaces, private bathrooms,
+                    ocean air and relaxed mornings make
+                    Guánico your home away from home.
+                </p>
+
+                <div class="card-actions">
+                    <a href="booking.html" class="btn btn-primary" data-i18n="book">Book Now</a>
+                    <a href="booking.html#rooms" class="btn btn-outline" data-i18n="rooms">Explore Rooms</a>
+                </div>
+            </article>
+
+            <!-- STOP 04 — SEA WAVE DRONE -->
+
+            <article class="tour-card" data-stop="3" inert aria-hidden="true">
+                <span class="badge" data-i18n="s4badge">04 / Ocean Adventures</span>
+
+                <h2 data-i18n="s4title">Follow your curiosity.</h2>
+
+                <p data-i18n="s4body">
+                    Ride the waves of Playa Guánico,
+                    discover surf coaching, explore mangroves
+                    on a stand-up paddleboard or head out
+                    on a boat charter. Your adventure,
+                    your pace. Ask us about availability.
+                </p>
+
+                <div class="card-actions">
+                    <a href="https://wa.me/50767725404" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="plan">Plan Your Adventure</a>
+                    <a href="#experiences" class="btn btn-outline" data-i18n="details">View Details</a>
+                </div>
+            </article>
+
+            <!-- STOP 05 — BAR AND KITCHEN -->
+
+            <article class="tour-card" data-stop="4" inert aria-hidden="true">
+                <span class="badge" data-i18n="s5badge">05 / Food & Good Company</span>
+
+                <h2 data-i18n="s5title">Good food. Better moments.</h2>
+
+                <p data-i18n="s5body">
+                    Discover international flavors and
+                    wood-fired cooking at Palmeras restaurant.
+                    Then settle into the relaxed atmosphere
+                    of the Guanico Tiki Bar, where good
+                    company meets the coastal breeze.
+                </p>
+
+                <div class="card-actions">
+                    <a href="dining.html" class="btn btn-primary" data-i18n="menu">Explore Menu</a>
+                    <a href="dining.html#reserve" class="btn btn-outline" data-i18n="reserve">Reserve a Table</a>
+                </div>
+            </article>
+
+            <!-- STOP 06 — OCEAN FRONT VIEW -->
+
+            <article class="tour-card" data-stop="5" inert aria-hidden="true">
+                <span class="badge" data-i18n="s6badge">06 / Your Escape Awaits</span>
+
+                <h2 data-i18n="s6title">Stay a little longer.</h2>
+
+                <p data-i18n="s6body">
+                    Let the Pacific sunset remind you what
+                    getting away really means. Whether
+                    traveling with family, friends or on
+                    your own, your Guánico story is waiting
+                    to begin.
+                </p>
+
+                <div class="card-actions">
+                    <a href="booking.html" class="btn btn-primary" data-i18n="book">Book Now</a>
+                    <a href="https://wa.me/50767725404" class="btn btn-outline" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                </div>
+            </article>
+
+        </div>
+
+        <nav class="tour-navigation" aria-label="Tour chapters">
+            <button class="stop-button active" data-go="0" aria-label="Stop 1" aria-current="step">
+                <span class="stop-label" data-i18n="nav1">01 Welcome</span>
+                <span class="stop-dot"></span>
+            </button>
+
+            <button class="stop-button" data-go="1" aria-label="Stop 2">
+                <span class="stop-label" data-i18n="nav2">02 Wellness</span>
+                <span class="stop-dot"></span>
+            </button>
+
+            <button class="stop-button" data-go="2" aria-label="Stop 3">
+                <span class="stop-label" data-i18n="nav3">03 Rooms</span>
+                <span class="stop-dot"></span>
+            </button>
+
+            <button class="stop-button" data-go="3" aria-label="Stop 4">
+                <span class="stop-label" data-i18n="nav4">04 Adventure</span>
+                <span class="stop-dot"></span>
+            </button>
+
+            <button class="stop-button" data-go="4" aria-label="Stop 5">
+                <span class="stop-label" data-i18n="nav5">05 Dining</span>
+                <span class="stop-dot"></span>
+            </button>
+
+            <button class="stop-button" data-go="5" aria-label="Stop 6">
+                <span class="stop-label" data-i18n="nav6">06 Sunset</span>
+                <span class="stop-dot"></span>
+            </button>
+        </nav>
+
+        <div class="tour-bottom">
+            <div class="progress-meta">
+                <span id="stop-counter">01 / 06</span>
+                <span id="chapter-name" data-i18n="nav1">01 Welcome</span>
+            </div>
+
+            <div class="progress-track" id="progress-track" role="progressbar" aria-label="Tour progress" aria-valuemin="0" aria-valuemax="6" aria-valuenow="1">
+                <div id="progress-fill"></div>
+            </div>
+
+            <div class="tour-controls">
+                <button id="prev-stop" class="control-btn" disabled>
+                    ← <span data-i18n="previous">Previous</span>
+                </button>
+
+                <span class="scroll-hint" data-i18n="scroll">Scroll to discover ↓</span>
+
+                <button id="next-stop" class="control-btn">
+                    <span data-i18n="next">Next</span> →
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SIX INDEPENDENT SCROLL CHAPTERS -->
+
+    <div class="scroll-chapters" aria-hidden="true">
+        <div class="scroll-chapter" data-chapter="0"></div>
+        <div class="scroll-chapter" data-chapter="1"></div>
+        <div class="scroll-chapter" data-chapter="2"></div>
+        <div class="scroll-chapter" data-chapter="3"></div>
+        <div class="scroll-chapter" data-chapter="4"></div>
+        <div class="scroll-chapter" data-chapter="5"></div>
+    </div>
+
+</section>
+
+<!-- RESORT HIGHLIGHTS -->
+
+<section class="intro-strip">
+    <div class="container-custom intro-grid">
+        <div class="intro-item">
+            <strong>2014</strong>
+            <span data-i18n="stat1">Where our story began</span>
+        </div>
+
+        <div class="intro-item">
+            <strong>14 + 2</strong>
+            <span data-i18n="stat2">Rooms & apartments</span>
+        </div>
+
+        <div class="intro-item">
+            <strong>Pacific</strong>
+            <span data-i18n="stat3">Beachfront living</span>
+        </div>
+
+        <div class="intro-item">
+            <strong>5–10</strong>
+            <span data-i18n="stat4">Days to truly unwind</span>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT US -->
+
+<section class="section about-section" id="about">
+    <div class="container-custom about-grid">
+
+        <div class="about-copy">
+            <span class="eyebrow" data-i18n="aboutLabel">Our Story · Since 2014</span>
+
+            <h2 class="section-heading" data-i18n="aboutTitle">A different kind of escape.</h2>
+
+            <p class="section-copy" data-i18n="aboutP1">
+                Guánico began in 2014 as Surf Camp Guanico,
+                a small backpacker hotel for travelers drawn
+                to the waves and natural beauty of Panama's Pacific coast.
+            </p>
+
+            <p class="section-copy" data-i18n="aboutP2">
+                In April 2024, William Sanderson and the new
+                ownership began transforming the property
+                into a welcoming boutique beach resort,
+                renovating rooms with private bathrooms,
+                expanding the restaurant and introducing
+                wellness facilities and adventure equipment.
+            </p>
+
+            <p class="section-copy" data-i18n="aboutP3">
+                Our philosophy is simple: escape crowded
+                tourist destinations, experience the local
+                way of life and enjoy nature without giving
+                up comfort. We believe in genuine hospitality,
+                supporting our community and helping every
+                guest create their own adventure.
+            </p>
+
+            <div class="story-timeline">
+                <div class="timeline-item">
+                    <span class="timeline-year">2014</span>
+                    <p data-i18n="timeline1">The original Surf Camp Guanico opens.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-year">2024</span>
+                    <p data-i18n="timeline2">A new chapter begins as a boutique beach resort.</p>
+                </div>
+            </div>
+
+            <div class="card-actions">
+                <a href="booking.html" class="btn btn-primary" data-i18n="stay">Stay With Us</a>
+            </div>
+        </div>
+
+        <div class="about-art">
+            <video
+                id="about-video"
+                data-src="guanico-6.mp4"
+                muted
+                loop
+                playsinline
+                preload="none"
+                aria-hidden="true">
+            </video>
+
+            <div class="art-caption">
+                <h3 data-i18n="artTitle">The road less traveled.</h3>
+                <p>AZUERO PENINSULA · PANAMÁ</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- EXPERIENCES -->
+
+<section class="section experiences-section" id="experiences">
+    <div class="container-custom">
+
+        <div class="center-heading">
+            <span class="eyebrow" data-i18n="experienceLabel">Make It Your Own</span>
+            <h2 class="section-heading" data-i18n="experienceTitle">More than a place to stay.</h2>
+            <p class="section-copy" data-i18n="experienceIntro">
+                From quiet mornings to unforgettable adventures,
+                discover a side of Panama that moves at your pace.
+            </p>
+        </div>
+
+        <div class="experience-grid">
+            <article class="experience-card">
+                <span class="experience-number">01 / SURF</span>
+                <h3 data-i18n="exp1title">Ocean & Adventure</h3>
+                <p data-i18n="exp1body">
+                    Explore surfing, paddleboarding, fishing,
+                    horseback riding and the natural landscapes
+                    of the Azuero Peninsula. Contact us to
+                    arrange activities around your interests.
+                </p>
+                <a href="https://wa.me/50767725404" target="_blank" rel="noopener noreferrer" data-i18n="enquire">Enquire now ↗</a>
+            </article>
+
+            <article class="experience-card">
+                <span class="experience-number">02 / WELLNESS</span>
+                <h3 data-i18n="exp2title">Rest & Reconnect</h3>
+                <p data-i18n="exp2body">
+                    Take time for yourself with our saltwater
+                    pool, wellness spaces, yoga and peaceful
+                    surroundings away from busy cities.
+                </p>
+                <a href="booking.html" data-i18n="enquire">Enquire now ↗</a>
+            </article>
+
+            <article class="experience-card">
+                <span class="experience-number">03 / TOGETHER</span>
+                <h3 data-i18n="exp3title">Groups & Private Stays</h3>
+                <p data-i18n="exp3body">
+                    Bring your family, friends or team together.
+                    Explore private retreats for up to 20 guests,
+                    tailored itineraries, catering and exclusive
+                    use of the resort by arrangement.
+                </p>
+                <a href="booking.html#rooms" data-i18n="enquire">Enquire now ↗</a>
+            </article>
+        </div>
+
+    </div>
+</section>
+
+<!-- FAQ -->
+
+<section class="section faq-section" id="faq">
+    <div class="container-custom faq-grid">
+
+        <div>
+            <span class="eyebrow" data-i18n="faqLabel">Before You Arrive</span>
+            <h2 class="section-heading" data-i18n="faqTitle">A few things to know.</h2>
+            <p class="section-copy" data-i18n="faqIntro">
+                Planning your escape to Playa Guánico?
+                Here are answers to some common questions.
+            </p>
+
+            <div class="card-actions">
+                <a href="https://wa.me/50767725404" class="btn btn-primary" target="_blank" rel="noopener noreferrer" data-i18n="contact">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="faq-list">
+
+            <details class="faq-item">
+                <summary data-i18n="q1">Where is Guánico Beach Resort located?</summary>
+                <p class="faq-answer" data-i18n="a1">
+                    We are located in Playa Guánico, Tonosí,
+                    Los Santos, on Panama's Pacific-facing
+                    Azuero Peninsula.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary data-i18n="q2">Is breakfast included?</summary>
+                <p class="faq-answer" data-i18n="a2">
+                    Breakfast is included in advertised room rates.
+                    The applicable 10% hotel tax is additional.
+                    Confirm apartment and group package inclusions when booking.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary data-i18n="q3">Is the resort suitable for families?</summary>
+                <p class="faq-answer" data-i18n="a3">
+                    Yes. Guánico is a relaxed, family-friendly
+                    boutique resort with comfortable accommodation,
+                    dining and activities for different interests.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary data-i18n="q4">Can beginners learn to surf?</summary>
+                <p class="faq-answer" data-i18n="a4">
+                    Ask about surf coaching and our Free Demo Surfboard
+                    Program. Sessions depend on experience, ocean
+                    conditions and instructor availability.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary data-i18n="q5">Can we book the entire resort?</summary>
+                <p class="faq-answer" data-i18n="a5">
+                    Private retreats for up to 20 guests can be arranged
+                    subject to availability. Contact us for a tailored proposal.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary data-i18n="q6">How long should we stay?</summary>
+                <p class="faq-answer" data-i18n="a6">
+                    We recommend five to ten days to enjoy the beach,
+                    explore the area and experience the local lifestyle.
+                    Longer stays are welcome.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary data-i18n="q7">Is there a restaurant at the resort?</summary>
+                <p class="faq-answer" data-i18n="a7">
+                    Yes. Palmeras offers international cuisine and
+                    wood-fired cooking, while Guanico Tiki Bar
+                    provides a relaxed setting for drinks and good company.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary data-i18n="q8">How can I book directly?</summary>
+                <p class="faq-answer" data-i18n="a8">
+                    Visit our booking page or contact us on WhatsApp.
+                    A 15% deposit is required according to confirmed
+                    reservation terms.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary data-i18n="q9">What are the check-in and check-out times?</summary>
+                <p class="faq-answer" data-i18n="a9">
+                    Check-in is from 3:00 PM and check-out is at 12:00 PM.
+                </p>
+            </details>
+
+        </div>
+    </div>
+</section>
+
+<!-- GUEST TESTIMONIALS -->
+
+<section class="section testimonials-section" id="testimonials">
+    <div class="container-custom">
+
+        <div class="center-heading">
+            <span class="eyebrow" data-i18n="guestLabel">The Guánico Experience</span>
+            <h2 class="section-heading" data-i18n="guestTitle">What guests love about Guánico.</h2>
+            <p class="section-copy" data-i18n="guestIntro">The moments that make a stay memorable.</p>
+        </div>
+
+        <div class="testimonial-grid">
+            <article class="testimonial-card">
+                <span class="feedback-index">01</span>
+                <h3 data-i18n="review1title">Genuine Hospitality</h3>
+                <p data-i18n="review1body">
+                    Friendly service, personal attention and a
+                    welcoming atmosphere are among the qualities
+                    guests appreciate most.
+                </p>
+            </article>
+
+            <article class="testimonial-card">
+                <span class="feedback-index">02</span>
+                <h3 data-i18n="review2title">Memorable Food</h3>
+                <p data-i18n="review2body">
+                    The food and dining experience are recurring
+                    highlights of guest feedback at Guánico Beach Resort.
+                </p>
+            </article>
+
+            <article class="testimonial-card">
+                <span class="feedback-index">03</span>
+                <h3 data-i18n="review3title">Natural Beauty</h3>
+                <p data-i18n="review3body">
+                    The surrounding landscape, Pacific coastline
+                    and peaceful setting are frequently appreciated by visitors.
+                </p>
+            </article>
+        </div>
+
+        <p class="feedback-disclosure" data-i18n="reviewNote">
+            Summaries of recurring guest feedback reported by
+            the resort owner, rather than individual guest quotations.
+        </p>
+
+    </div>
+</section>
+
+<!-- FINAL CTA -->
+
+<section class="final-cta">
+    <span class="badge" data-i18n="finalBadge">Your Next Adventure</span>
+    <h2 data-i18n="finalTitle">Come for the waves. Stay for the feeling.</h2>
+    <p data-i18n="finalBody">
+        Discover authentic Panama at Guánico Beach Resort.
+        Your next unforgettable escape starts here.
+    </p>
+
+    <div class="card-actions">
+        <a href="booking.html" class="btn btn-primary" data-i18n="book">Book Now</a>
+        <a href="https://wa.me/50767725404" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+            WhatsApp · +507 6772-5404
+        </a>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container-custom">
+
+        <div class="footer-grid">
+            <div>
+                <a href="index.html" class="logo-pill footer-logo">
+                    <img src="guanico-logo.png" alt="Guánico Beach Resort in Panama">
+                </a>
+
+                <p class="footer-description">
+                    Guánico Beach Resort in Panama<br>
+                    Playa Guánico, Tonosí, Los Santos<br>
+                    Azuero Peninsula, República de Panamá
+                </p>
+            </div>
+
+            <div>
+                <h3 class="footer-title" data-i18n="explore">Explore</h3>
+                <div class="footer-links">
+                    <a href="index.html" data-i18n="home">Home</a>
+                    <a href="#about" data-i18n="about">About Us</a>
+                    <a href="#experiences" data-i18n="activities">Explore Activities</a>
+                    <a href="dining.html" data-i18n="dining">Dining</a>
+                    <a href="booking.html" data-i18n="book">Book Now</a>
+                    <a href="#faq">FAQs</a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="footer-title" data-i18n="contact">Contact Us</h3>
+                <div class="footer-links">
+                    <a href="tel:+50767725404">+507 6772-5404</a>
+                    <a href="https://wa.me/50767725404" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Guanico+Beach+Resort+Tonosi+Panama" target="_blank" rel="noopener noreferrer" data-i18n="directions">Get Directions ↗</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>
+                © <span id="current-year">2026</span> Guánico Beach Resort.
+                <span data-i18n="rights">All rights reserved.</span>
+            </span>
+            <span data-i18n="footerTag">A different side of Panama.</span>
+        </div>
+
+    </div>
+</footer>
+
+<a href="https://wa.me/50767725404" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contact Guánico Beach Resort on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12.04 2a9.84 9.84 0 0 0-8.51 14.8L2 22l5.35-1.4A9.97 9.97 0 1 0 12.04 2Zm0 18.18a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.17.83.85-3.08-.2-.32a8.19 8.19 0 1 1 7 3.89Zm4.49-6.12c-.25-.12-1.46-.72-1.69-.8-.23-.09-.4-.13-.56.12-.17.25-.64.8-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.44.12-.14.17-.24.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.46-.56-.46h-.47c-.16 0-.43.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.57c.12.16 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.18.2-.58.2-1.08.14-1.18-.06-.1-.23-.17-.48-.29Z"/>
+    </svg>
+</a>
+
+<script>
+"use strict";
+
+/* =========================================
+   CONFIGURATION
+========================================= */
+
+const CLIPS = [
+    "guanico-1.mp4",
+    "guanico-2.mp4",
+    "guanico-3.mp4",
+    "guanico-4.mp4",
+    "guanico-5.mp4",
+    "guanico-6.mp4"
+];
+
+const SITE_URL = "";
+
+const reducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+).matches;
+
+const FADE_DURATION = reducedMotion ? 0 : 650;
+
+const $ = id => document.getElementById(id);
+
+const clamp = (value,min,max) =>
+    Math.max(min,Math.min(max,value));
+
+/* =========================================
+   FIVE-LANGUAGE TRANSLATIONS
+========================================= */
+
+const translations = {en:{}};
+
+document.querySelectorAll("[data-i18n]").forEach(element => {
+    translations.en[element.dataset.i18n] =
+        element.textContent.trim().replace(/\s+/g," ");
+});
+
+Object.assign(translations.en,{
+    videoError:"The video could not load. Check the local MP4 file or try again.",
+    playError:"Tap Try Again to start the video.",
+    threeLoading:"Loading the interactive 3D experience...",
+    threeError:"3D rendering is unavailable. You can continue with the real video tour."
+});
+
+translations.es = {
+    home:"Inicio",
+    tour:"La experiencia",
+    about:"Nosotros",
+    dining:"Gastronomía",
+    stay:"Alójate con nosotros",
+    book:"Reservar ahora",
+    modeVideo:"Video real",
+    mode3d:"Experiencia 3D",
+    startVideo:"Iniciar recorrido",
+    story:"Nuestra historia",
+    activities:"Explorar actividades",
+    rooms:"Explorar habitaciones",
+    plan:"Planifica tu aventura",
+    details:"Ver detalles",
+    menu:"Explorar menú",
+    reserve:"Reservar una mesa",
+    previous:"Anterior",
+    next:"Siguiente",
+    scroll:"Desplázate para descubrir ↓",
+    retry:"Intentar de nuevo",
+    nav1:"01 Bienvenida",
+    nav2:"02 Bienestar",
+    nav3:"03 Habitaciones",
+    nav4:"04 Aventura",
+    nav5:"05 Gastronomía",
+    nav6:"06 Atardecer",
+    s1badge:"01 / Nuestra historia",
+    s1title:"Al final del camino, comienza la vida.",
+    s1body:"Bienvenido a Guánico Beach Resort en Panamá. Nacido como campamento de surf en 2014 y renovado en 2024, nuestro refugio boutique frente al mar te invita a reconectar con la naturaleza y descubrir la auténtica península de Azuero.",
+    s2badge:"02 / Bienestar y surf",
+    s2title:"Encuentra tu ritmo natural.",
+    s2body:"Refréscate en nuestra piscina de agua salada, disfruta del baño de inmersión fría, relájate en la terraza de yoga y descubre tu tabla favorita con nuestro programa gratuito de prueba de tablas de surf.",
+    s3badge:"03 / Descansa frente al mar",
+    s3title:"Despierta en un lugar extraordinario.",
+    s3body:"Descubre 14 habitaciones y cabañas con vista al mar y 2 apartamentos con cocina propia. Espacios cómodos, baños privados y la brisa del océano te harán sentir como en casa.",
+    s4badge:"04 / Aventuras en el océano",
+    s4title:"Sigue tu curiosidad.",
+    s4body:"Disfruta de las olas de Playa Guánico, clases de surf, recorridos por manglares en paddleboard y excursiones en barco. Tu aventura, a tu ritmo. Consulta disponibilidad.",
+    s5badge:"05 / Gastronomía y buena compañía",
+    s5title:"Buena comida. Mejores momentos.",
+    s5body:"Descubre sabores internacionales y cocina a leña en el restaurante Palmeras. Después, disfruta del ambiente relajado del Guanico Tiki Bar junto a la brisa del mar.",
+    s6badge:"06 / Tu escapada te espera",
+    s6title:"Quédate un poco más.",
+    s6body:"Deja que el atardecer del Pacífico te recuerde lo que significa desconectar. Con familia, amigos o por tu cuenta, tu historia en Guánico está por comenzar.",
+    stat1:"Donde comenzó nuestra historia",
+    stat2:"Habitaciones y apartamentos",
+    stat3:"Vida frente al mar",
+    stat4:"Días para desconectar",
+    aboutLabel:"Nuestra historia · Desde 2014",
+    aboutTitle:"Una escapada diferente.",
+    aboutP1:"Guánico nació en 2014 como Surf Camp Guanico, un pequeño hotel para viajeros atraídos por las olas y la belleza natural de la costa pacífica de Panamá.",
+    aboutP2:"En abril de 2024, William Sanderson y los nuevos propietarios comenzaron a transformar la propiedad en un acogedor resort boutique, renovando habitaciones con baños privados, ampliando el restaurante e incorporando instalaciones de bienestar y equipos de aventura.",
+    aboutP3:"Nuestra filosofía es sencilla: escapar de los destinos turísticos masificados, conocer la vida local y disfrutar de la naturaleza sin renunciar a la comodidad. Creemos en la hospitalidad auténtica, el apoyo a nuestra comunidad y las aventuras personalizadas.",
+    timeline1:"Abre el original Surf Camp Guanico.",
+    timeline2:"Comienza una nueva etapa como resort boutique.",
+    artTitle:"El camino menos recorrido.",
+    experienceLabel:"A tu manera",
+    experienceTitle:"Más que un lugar para dormir.",
+    experienceIntro:"Desde mañanas tranquilas hasta aventuras inolvidables, descubre Panamá a tu propio ritmo.",
+    exp1title:"Océano y aventura",
+    exp1body:"Explora el surf, paddleboard, pesca, paseos a caballo y los paisajes naturales de Azuero. Contáctanos para organizar actividades según tus intereses.",
+    exp2title:"Descansa y reconecta",
+    exp2body:"Dedica tiempo a ti mismo con nuestra piscina de agua salada, espacios de bienestar, yoga y tranquilidad lejos de las ciudades.",
+    exp3title:"Grupos y estancias privadas",
+    exp3body:"Reúne a tu familia, amigos o equipo. Consulta retiros para hasta 20 huéspedes, itinerarios personalizados, catering y uso exclusivo del resort.",
+    enquire:"Consultar ahora ↗",
+    faqLabel:"Antes de llegar",
+    faqTitle:"Algunas cosas que debes saber.",
+    faqIntro:"¿Planeas tu escapada a Playa Guánico? Aquí respondemos algunas preguntas frecuentes.",
+    contact:"Contáctanos",
+    q1:"¿Dónde está Guánico Beach Resort?",
+    a1:"Estamos en Playa Guánico, Tonosí, Los Santos, en la península de Azuero, Panamá, frente al océano Pacífico.",
+    q2:"¿Está incluido el desayuno?",
+    a2:"El desayuno está incluido en las tarifas anunciadas de habitaciones. El impuesto hotelero del 10% es adicional. Confirma las inclusiones de apartamentos y grupos.",
+    q3:"¿Es adecuado para familias?",
+    a3:"Sí. Somos un resort boutique familiar y relajado, con alojamiento cómodo, gastronomía y actividades.",
+    q4:"¿Pueden aprender surf los principiantes?",
+    a4:"Consulta clases de surf y el programa gratuito de prueba de tablas. Las sesiones dependen de la experiencia, el mar y los instructores disponibles.",
+    q5:"¿Podemos reservar todo el resort?",
+    a5:"Los retiros privados para hasta 20 huéspedes están sujetos a disponibilidad. Contáctanos para una propuesta personalizada.",
+    q6:"¿Cuánto tiempo deberíamos quedarnos?",
+    a6:"Recomendamos cinco a diez días para disfrutar de la playa y conocer la zona. Las estancias más largas son bienvenidas.",
+    q7:"¿Hay restaurante en el resort?",
+    a7:"Sí. Palmeras ofrece cocina internacional y a leña, mientras Guanico Tiki Bar ofrece un ambiente relajado.",
+    q8:"¿Cómo puedo reservar directamente?",
+    a8:"Visita nuestra página de reservas o contáctanos por WhatsApp. Se requiere un depósito del 15% según las condiciones confirmadas.",
+    q9:"¿Cuáles son los horarios de entrada y salida?",
+    a9:"Entrada a partir de las 15:00 y salida a las 12:00.",
+    guestLabel:"La experiencia Guánico",
+    guestTitle:"Lo que más valoran nuestros huéspedes.",
+    guestIntro:"Los momentos que hacen memorable una estancia.",
+    review1title:"Hospitalidad auténtica",
+    review1body:"El servicio amable, la atención personal y el ambiente acogedor son cualidades que los huéspedes valoran.",
+    review2title:"Comida memorable",
+    review2body:"La gastronomía es uno de los aspectos destacados en los comentarios de nuestros huéspedes.",
+    review3title:"Belleza natural",
+    review3body:"Los paisajes, la costa del Pacífico y la tranquilidad son muy apreciados por los visitantes.",
+    reviewNote:"Resumen de comentarios recurrentes comunicado por el propietario, no citas individuales de huéspedes.",
+    finalBadge:"Tu próxima aventura",
+    finalTitle:"Ven por las olas. Quédate por la sensación.",
+    finalBody:"Descubre el Panamá auténtico en Guánico Beach Resort. Tu próxima escapada inolvidable comienza aquí.",
+    explore:"Explorar",
+    directions:"Cómo llegar ↗",
+    rights:"Todos los derechos reservados.",
+    footerTag:"Una cara diferente de Panamá.",
+    videoError:"No se pudo cargar el video. Comprueba el archivo MP4.",
+    playError:"Pulsa Intentar de nuevo para reproducir el video.",
+    threeLoading:"Cargando la experiencia 3D...",
+    threeError:"La experiencia 3D no está disponible. Continúa con el video real."
+};
+
+translations.fr = {
+    home:"Accueil",
+    tour:"L'expérience",
+    about:"À propos",
+    dining:"Restaurant",
+    stay:"Séjourner chez nous",
+    book:"Réserver",
+    modeVideo:"Vidéo réelle",
+    mode3d:"Expérience 3D",
+    startVideo:"Commencer la visite",
+    story:"Notre histoire",
+    activities:"Découvrir les activités",
+    rooms:"Découvrir les chambres",
+    plan:"Préparer votre aventure",
+    details:"Voir les détails",
+    menu:"Découvrir le menu",
+    reserve:"Réserver une table",
+    previous:"Précédent",
+    next:"Suivant",
+    scroll:"Défilez pour découvrir ↓",
+    retry:"Réessayer",
+    nav1:"01 Bienvenue",
+    nav2:"02 Bien-être",
+    nav3:"03 Chambres",
+    nav4:"04 Aventure",
+    nav5:"05 Restaurant",
+    nav6:"06 Coucher de soleil",
+    s1badge:"01 / Notre histoire",
+    s1title:"Au bout de la route, la vie commence.",
+    s1body:"Bienvenue à Guánico Beach Resort au Panama. Né comme camp de surf en 2014 et réinventé en 2024, notre hôtel de charme en bord de mer vous invite à découvrir la nature et l'authentique péninsule d'Azuero.",
+    s2badge:"02 / Bien-être et surf",
+    s2title:"Retrouvez votre rythme naturel.",
+    s2body:"Profitez de notre piscine d'eau salée, du bain froid, de la terrasse de yoga et de notre programme gratuit d'essai de planches de surf.",
+    s3badge:"03 / Séjour en bord de mer",
+    s3title:"Réveillez-vous dans un lieu extraordinaire.",
+    s3body:"Découvrez 14 chambres et cabanes avec vue sur la mer et 2 appartements avec cuisine. Des espaces confortables et des salles de bains privées vous attendent.",
+    s4badge:"04 / Aventures océaniques",
+    s4title:"Suivez votre curiosité.",
+    s4body:"Surfez à Playa Guánico, découvrez les cours de surf, les excursions en paddle dans les mangroves et les sorties en bateau. Renseignez-vous sur les disponibilités.",
+    s5badge:"05 / Saveurs et convivialité",
+    s5title:"De bons plats. De meilleurs moments.",
+    s5body:"Découvrez la cuisine internationale et les plats au feu de bois du restaurant Palmeras, puis profitez de l'ambiance détendue du Guanico Tiki Bar.",
+    s6badge:"06 / Votre escapade vous attend",
+    s6title:"Restez encore un peu.",
+    s6body:"Admirez le coucher de soleil sur le Pacifique. En famille, entre amis ou en solo, votre histoire à Guánico ne fait que commencer.",
+    stat1:"Le début de notre histoire",
+    stat2:"Chambres et appartements",
+    stat3:"La vie en bord de mer",
+    stat4:"Jours pour se détendre",
+    aboutLabel:"Notre histoire · Depuis 2014",
+    aboutTitle:"Une escapade différente.",
+    aboutP1:"Guánico est né en 2014 sous le nom de Surf Camp Guanico, un petit hôtel pour les voyageurs attirés par les vagues et la beauté de la côte pacifique du Panama.",
+    aboutP2:"En avril 2024, William Sanderson et les nouveaux propriétaires ont commencé à transformer le site en hôtel de charme, avec des chambres rénovées, des salles de bains privées, un restaurant agrandi et des équipements de bien-être et d'aventure.",
+    aboutP3:"Notre philosophie est simple : échapper aux foules, découvrir la vie locale et profiter de la nature avec confort. Nous privilégions l'hospitalité authentique, le soutien à la communauté et les aventures personnalisées.",
+    timeline1:"Ouverture du Surf Camp Guanico.",
+    timeline2:"Un nouveau chapitre comme hôtel de charme.",
+    artTitle:"Les chemins moins fréquentés.",
+    experienceLabel:"À votre façon",
+    experienceTitle:"Bien plus qu'un hébergement.",
+    experienceIntro:"Des matins paisibles aux aventures inoubliables, découvrez le Panama à votre rythme.",
+    exp1title:"Océan et aventure",
+    exp1body:"Découvrez le surf, le paddle, la pêche, les balades à cheval et les paysages d'Azuero. Contactez-nous pour organiser vos activités.",
+    exp2title:"Repos et reconnexion",
+    exp2body:"Profitez de la piscine d'eau salée, des espaces de bien-être, du yoga et d'un cadre paisible.",
+    exp3title:"Groupes et séjours privés",
+    exp3body:"Réunissez votre famille ou vos amis. Renseignez-vous sur les retraites privées jusqu'à 20 personnes, les repas et la privatisation.",
+    enquire:"Se renseigner ↗",
+    faqLabel:"Avant votre arrivée",
+    faqTitle:"Quelques informations utiles.",
+    faqIntro:"Vous préparez votre séjour à Playa Guánico ? Voici les réponses aux questions fréquentes.",
+    contact:"Nous contacter",
+    q1:"Où se trouve Guánico Beach Resort ?",
+    a1:"À Playa Guánico, Tonosí, Los Santos, sur la péninsule d'Azuero au Panama, au bord du Pacifique.",
+    q2:"Le petit-déjeuner est-il inclus ?",
+    a2:"Il est inclus dans les tarifs de chambres annoncés. La taxe hôtelière de 10 % est en supplément. Vérifiez les prestations des appartements et groupes.",
+    q3:"L'hôtel convient-il aux familles ?",
+    a3:"Oui. Notre hôtel de charme accueille les familles avec des chambres confortables, un restaurant et diverses activités.",
+    q4:"Les débutants peuvent-ils apprendre le surf ?",
+    a4:"Renseignez-vous sur les cours et les essais gratuits de planches, selon votre niveau, la mer et les moniteurs disponibles.",
+    q5:"Peut-on privatiser l'hôtel ?",
+    a5:"Les retraites privées jusqu'à 20 personnes sont possibles selon disponibilité. Contactez-nous pour une proposition.",
+    q6:"Combien de temps faut-il séjourner ?",
+    a6:"Nous recommandons cinq à dix jours. Les séjours plus longs sont les bienvenus.",
+    q7:"Y a-t-il un restaurant sur place ?",
+    a7:"Oui. Palmeras propose une cuisine internationale au feu de bois et le Guanico Tiki Bar offre une ambiance conviviale.",
+    q8:"Comment réserver directement ?",
+    a8:"Consultez notre page de réservation ou contactez-nous sur WhatsApp. Un acompte de 15 % est requis selon les conditions confirmées.",
+    q9:"Quels sont les horaires d'arrivée et de départ ?",
+    a9:"Arrivée à partir de 15 h, départ à midi.",
+    guestLabel:"L'expérience Guánico",
+    guestTitle:"Ce que les voyageurs apprécient.",
+    guestIntro:"Les moments qui rendent un séjour mémorable.",
+    review1title:"Hospitalité authentique",
+    review1body:"Le service chaleureux, l'attention personnelle et l'accueil sont appréciés des voyageurs.",
+    review2title:"Une cuisine mémorable",
+    review2body:"La restauration figure régulièrement parmi les points forts mentionnés.",
+    review3title:"Beauté naturelle",
+    review3body:"Les paysages, la côte pacifique et la tranquillité sont appréciés des visiteurs.",
+    reviewNote:"Synthèse des retours récurrents rapportés par le propriétaire, et non citations individuelles.",
+    finalBadge:"Votre prochaine aventure",
+    finalTitle:"Venez pour les vagues. Restez pour l'émotion.",
+    finalBody:"Découvrez le Panama authentique à Guánico Beach Resort. Votre prochaine escapade commence ici.",
+    explore:"Explorer",
+    directions:"Itinéraire ↗",
+    rights:"Tous droits réservés.",
+    footerTag:"Une autre facette du Panama.",
+    videoError:"Impossible de charger la vidéo. Vérifiez le fichier MP4.",
+    playError:"Appuyez sur Réessayer pour lire la vidéo.",
+    threeLoading:"Chargement de l'expérience 3D...",
+    threeError:"La 3D est indisponible. Continuez avec la vidéo réelle."
+};
+
+translations.de = {
+    home:"Startseite",
+    tour:"Das Erlebnis",
+    about:"Über uns",
+    dining:"Restaurant",
+    stay:"Bei uns übernachten",
+    book:"Jetzt buchen",
+    modeVideo:"Echtes Video",
+    mode3d:"3D-Erlebnis",
+    startVideo:"Resort-Tour starten",
+    story:"Unsere Geschichte",
+    activities:"Aktivitäten entdecken",
+    rooms:"Zimmer entdecken",
+    plan:"Abenteuer planen",
+    details:"Details ansehen",
+    menu:"Speisekarte ansehen",
+    reserve:"Tisch reservieren",
+    previous:"Zurück",
+    next:"Weiter",
+    scroll:"Scrollen und entdecken ↓",
+    retry:"Erneut versuchen",
+    nav1:"01 Willkommen",
+    nav2:"02 Wellness",
+    nav3:"03 Zimmer",
+    nav4:"04 Abenteuer",
+    nav5:"05 Restaurant",
+    nav6:"06 Sonnenuntergang",
+    s1badge:"01 / Unsere Geschichte",
+    s1title:"Am Ende der Straße beginnt das Leben.",
+    s1body:"Willkommen im Guánico Beach Resort in Panama. 2014 als Surfcamp gegründet und 2024 neu gestaltet, lädt unser Boutique-Resort am Meer dazu ein, die Natur und die authentische Azuero-Halbinsel zu entdecken.",
+    s2badge:"02 / Wellness und Surfen",
+    s2title:"Finden Sie Ihren natürlichen Rhythmus.",
+    s2body:"Genießen Sie unseren Salzwasserpool, das Kaltwasserbad, die Yoga-Terrasse und unser kostenloses Surfbrett-Testprogramm.",
+    s3badge:"03 / Wohnen am Meer",
+    s3title:"Erwachen Sie an einem besonderen Ort.",
+    s3body:"Entdecken Sie 14 Zimmer und Cabanas mit Meerblick sowie 2 Apartments zur Selbstverpflegung. Komfortable Räume, private Badezimmer und Meeresluft erwarten Sie.",
+    s4badge:"04 / Abenteuer am Meer",
+    s4title:"Folgen Sie Ihrer Neugier.",
+    s4body:"Surfen Sie in Playa Guánico, entdecken Sie Surfkurse, SUP-Touren durch Mangroven und Bootsausflüge. Fragen Sie nach der Verfügbarkeit.",
+    s5badge:"05 / Genuss und Gesellschaft",
+    s5title:"Gutes Essen. Besondere Momente.",
+    s5body:"Entdecken Sie internationale Küche und Holzofengerichte im Restaurant Palmeras. Genießen Sie anschließend die entspannte Atmosphäre der Guanico Tiki Bar.",
+    s6badge:"06 / Ihre Auszeit wartet",
+    s6title:"Bleiben Sie noch ein wenig.",
+    s6body:"Genießen Sie den Sonnenuntergang am Pazifik. Ob mit Familie, Freunden oder allein: Ihre Geschichte in Guánico beginnt jetzt.",
+    stat1:"Der Beginn unserer Geschichte",
+    stat2:"Zimmer und Apartments",
+    stat3:"Leben am Meer",
+    stat4:"Tage zum Entspannen",
+    aboutLabel:"Unsere Geschichte · Seit 2014",
+    aboutTitle:"Eine andere Art der Auszeit.",
+    aboutP1:"Guánico begann 2014 als Surf Camp Guanico, ein kleines Hotel für Reisende, die von den Wellen und der Natur an Panamas Pazifikküste angezogen wurden.",
+    aboutP2:"Im April 2024 begannen William Sanderson und die neuen Eigentümer mit dem Umbau zu einem Boutique-Resort mit renovierten Zimmern, privaten Badezimmern, erweitertem Restaurant sowie Wellness- und Abenteuerausstattung.",
+    aboutP3:"Unsere Philosophie ist einfach: dem Massentourismus entfliehen, das lokale Leben kennenlernen und die Natur komfortabel genießen. Wir stehen für echte Gastfreundschaft, lokale Gemeinschaft und individuelle Abenteuer.",
+    timeline1:"Das ursprüngliche Surf Camp Guanico eröffnet.",
+    timeline2:"Ein neues Kapitel als Boutique-Resort beginnt.",
+    artTitle:"Abseits der bekannten Wege.",
+    experienceLabel:"Ganz nach Ihrem Geschmack",
+    experienceTitle:"Mehr als eine Unterkunft.",
+    experienceIntro:"Von ruhigen Morgenstunden bis zu unvergesslichen Abenteuern: Entdecken Sie Panama in Ihrem eigenen Tempo.",
+    exp1title:"Meer und Abenteuer",
+    exp1body:"Entdecken Sie Surfen, Stand-up-Paddling, Angeln, Reiten und die Landschaften von Azuero. Kontaktieren Sie uns für individuelle Aktivitäten.",
+    exp2title:"Ruhe und Erholung",
+    exp2body:"Nehmen Sie sich Zeit für unseren Salzwasserpool, Wellnessbereiche, Yoga und die friedliche Umgebung.",
+    exp3title:"Gruppen und private Aufenthalte",
+    exp3body:"Bringen Sie Familie, Freunde oder Ihr Team zusammen. Fragen Sie nach Retreats für bis zu 20 Gäste, Verpflegung und exklusiver Nutzung.",
+    enquire:"Jetzt anfragen ↗",
+    faqLabel:"Vor Ihrer Anreise",
+    faqTitle:"Wissenswertes für Ihren Aufenthalt.",
+    faqIntro:"Planen Sie Ihre Reise nach Playa Guánico? Hier finden Sie Antworten auf häufige Fragen.",
+    contact:"Kontakt",
+    q1:"Wo liegt das Guánico Beach Resort?",
+    a1:"In Playa Guánico, Tonosí, Los Santos, auf der Azuero-Halbinsel an Panamas Pazifikküste.",
+    q2:"Ist das Frühstück inbegriffen?",
+    a2:"Frühstück ist im angegebenen Zimmerpreis enthalten. Die Hotelsteuer von 10 % kommt hinzu. Leistungen für Apartments und Gruppen bitte bestätigen lassen.",
+    q3:"Ist das Resort familienfreundlich?",
+    a3:"Ja. Unser Boutique-Resort bietet komfortable Unterkünfte, Gastronomie und verschiedene Aktivitäten für Familien.",
+    q4:"Können Anfänger surfen lernen?",
+    a4:"Fragen Sie nach Surfkursen und kostenlosen Surfbrett-Tests. Die Angebote hängen von Erfahrung, Meeresbedingungen und verfügbaren Lehrern ab.",
+    q5:"Kann man das gesamte Resort buchen?",
+    a5:"Private Retreats für bis zu 20 Gäste sind nach Verfügbarkeit möglich. Kontaktieren Sie uns für ein Angebot.",
+    q6:"Wie lange sollten wir bleiben?",
+    a6:"Wir empfehlen fünf bis zehn Tage. Längere Aufenthalte sind willkommen.",
+    q7:"Gibt es ein Restaurant im Resort?",
+    a7:"Ja. Palmeras bietet internationale Küche und Holzofengerichte. Die Guanico Tiki Bar lädt zum Verweilen ein.",
+    q8:"Wie kann ich direkt buchen?",
+    a8:"Besuchen Sie unsere Buchungsseite oder kontaktieren Sie uns per WhatsApp. Eine Anzahlung von 15 % ist gemäß bestätigten Bedingungen erforderlich.",
+    q9:"Wann sind Anreise und Abreise?",
+    a9:"Anreise ab 15 Uhr, Abreise bis 12 Uhr.",
+    guestLabel:"Das Guánico-Erlebnis",
+    guestTitle:"Was unsere Gäste schätzen.",
+    guestIntro:"Momente, die einen Aufenthalt unvergesslich machen.",
+    review1title:"Echte Gastfreundschaft",
+    review1body:"Freundlicher Service, persönliche Aufmerksamkeit und eine einladende Atmosphäre werden besonders geschätzt.",
+    review2title:"Besonderes Essen",
+    review2body:"Die Gastronomie gehört regelmäßig zu den positiven Rückmeldungen unserer Gäste.",
+    review3title:"Natürliche Schönheit",
+    review3body:"Die Landschaft, die Pazifikküste und die ruhige Umgebung werden von Besuchern geschätzt.",
+    reviewNote:"Zusammenfassung wiederkehrender Rückmeldungen laut Eigentümer, keine einzelnen Gästezitate.",
+    finalBadge:"Ihr nächstes Abenteuer",
+    finalTitle:"Kommen Sie für die Wellen. Bleiben Sie für das Gefühl.",
+    finalBody:"Entdecken Sie das authentische Panama im Guánico Beach Resort. Ihre nächste Auszeit beginnt hier.",
+    explore:"Entdecken",
+    directions:"Anfahrt ↗",
+    rights:"Alle Rechte vorbehalten.",
+    footerTag:"Eine andere Seite Panamas.",
+    videoError:"Das Video konnte nicht geladen werden. Prüfen Sie die MP4-Datei.",
+    playError:"Tippen Sie auf Erneut versuchen, um das Video abzuspielen.",
+    threeLoading:"Das 3D-Erlebnis wird geladen...",
+    threeError:"3D ist nicht verfügbar. Nutzen Sie die Video-Tour."
+};
+
+translations.pt = {
+    home:"Início",
+    tour:"A experiência",
+    about:"Sobre nós",
+    dining:"Gastronomia",
+    stay:"Hospede-se conosco",
+    book:"Reservar agora",
+    modeVideo:"Vídeo real",
+    mode3d:"Experiência 3D",
+    startVideo:"Iniciar passeio",
+    story:"Nossa história",
+    activities:"Explorar atividades",
+    rooms:"Explorar quartos",
+    plan:"Planejar sua aventura",
+    details:"Ver detalhes",
+    menu:"Explorar cardápio",
+    reserve:"Reservar uma mesa",
+    previous:"Anterior",
+    next:"Próximo",
+    scroll:"Role para descobrir ↓",
+    retry:"Tentar novamente",
+    nav1:"01 Boas-vindas",
+    nav2:"02 Bem-estar",
+    nav3:"03 Quartos",
+    nav4:"04 Aventura",
+    nav5:"05 Gastronomia",
+    nav6:"06 Pôr do sol",
+    s1badge:"01 / Nossa história",
+    s1title:"No fim da estrada, a vida começa.",
+    s1body:"Bem-vindo ao Guánico Beach Resort no Panamá. Criado como surf camp em 2014 e renovado em 2024, nosso refúgio boutique à beira-mar convida você a descobrir a natureza e a autêntica península de Azuero.",
+    s2badge:"02 / Bem-estar e surfe",
+    s2title:"Encontre seu ritmo natural.",
+    s2body:"Aproveite nossa piscina de água salgada, banho de imersão fria, deck de yoga e programa gratuito de teste de pranchas de surfe.",
+    s3badge:"03 / Hospedagem à beira-mar",
+    s3title:"Acorde em um lugar extraordinário.",
+    s3body:"Descubra 14 quartos e cabanas com vista para o mar e 2 apartamentos com cozinha própria. Espaços confortáveis, banheiros privativos e a brisa do oceano esperam por você.",
+    s4badge:"04 / Aventuras no oceano",
+    s4title:"Siga sua curiosidade.",
+    s4body:"Surfe em Playa Guánico, descubra aulas de surfe, passeios de SUP pelos manguezais e passeios de barco. Consulte a disponibilidade.",
+    s5badge:"05 / Gastronomia e boa companhia",
+    s5title:"Boa comida. Melhores momentos.",
+    s5body:"Descubra sabores internacionais e pratos preparados a lenha no restaurante Palmeras. Depois, aproveite o ambiente descontraído do Guanico Tiki Bar.",
+    s6badge:"06 / Sua escapada espera por você",
+    s6title:"Fique mais um pouco.",
+    s6body:"Deixe o pôr do sol do Pacífico lembrar você do significado de relaxar. Com família, amigos ou sozinho, sua história em Guánico está começando.",
+    stat1:"Onde nossa história começou",
+    stat2:"Quartos e apartamentos",
+    stat3:"Vida à beira-mar",
+    stat4:"Dias para relaxar",
+    aboutLabel:"Nossa história · Desde 2014",
+    aboutTitle:"Uma escapada diferente.",
+    aboutP1:"Guánico nasceu em 2014 como Surf Camp Guanico, um pequeno hotel para viajantes atraídos pelas ondas e pela beleza natural da costa pacífica do Panamá.",
+    aboutP2:"Em abril de 2024, William Sanderson e os novos proprietários começaram a transformar a propriedade em um resort boutique acolhedor, renovando quartos com banheiros privativos, ampliando o restaurante e adicionando instalações de bem-estar e equipamentos de aventura.",
+    aboutP3:"Nossa filosofia é simples: escapar dos destinos lotados, conhecer a vida local e aproveitar a natureza com conforto. Valorizamos a hospitalidade genuína, o apoio à comunidade e as aventuras personalizadas.",
+    timeline1:"Inauguração do Surf Camp Guanico.",
+    timeline2:"Um novo capítulo como resort boutique.",
+    artTitle:"O caminho menos percorrido.",
+    experienceLabel:"Do seu jeito",
+    experienceTitle:"Mais que um lugar para ficar.",
+    experienceIntro:"De manhãs tranquilas a aventuras inesquecíveis, descubra o Panamá no seu ritmo.",
+    exp1title:"Oceano e aventura",
+    exp1body:"Explore surfe, paddleboard, pesca, passeios a cavalo e paisagens naturais de Azuero. Entre em contato para organizar suas atividades.",
+    exp2title:"Descanse e reconecte-se",
+    exp2body:"Reserve um tempo para aproveitar nossa piscina de água salgada, espaços de bem-estar, yoga e tranquilidade longe das cidades.",
+    exp3title:"Grupos e estadias privadas",
+    exp3body:"Reúna sua família, amigos ou equipe. Consulte retiros para até 20 hóspedes, roteiros personalizados, alimentação e uso exclusivo do resort.",
+    enquire:"Consultar agora ↗",
+    faqLabel:"Antes de chegar",
+    faqTitle:"Algumas informações importantes.",
+    faqIntro:"Planejando sua viagem para Playa Guánico? Confira as respostas às perguntas frequentes.",
+    contact:"Fale conosco",
+    q1:"Onde fica o Guánico Beach Resort?",
+    a1:"Estamos em Playa Guánico, Tonosí, Los Santos, na península de Azuero, na costa pacífica do Panamá.",
+    q2:"O café da manhã está incluído?",
+    a2:"O café da manhã está incluído nas tarifas anunciadas dos quartos. A taxa hoteleira de 10% é adicional. Confirme as inclusões de apartamentos e grupos.",
+    q3:"O resort é adequado para famílias?",
+    a3:"Sim. Nosso resort boutique oferece ambiente familiar, hospedagem confortável, gastronomia e atividades.",
+    q4:"Iniciantes podem aprender a surfar?",
+    a4:"Consulte aulas de surfe e o programa gratuito de teste de pranchas. As sessões dependem da experiência, condições do mar e disponibilidade.",
+    q5:"Podemos reservar todo o resort?",
+    a5:"Retiros privados para até 20 hóspedes estão sujeitos à disponibilidade. Entre em contato para uma proposta.",
+    q6:"Quanto tempo devemos ficar?",
+    a6:"Recomendamos cinco a dez dias. Estadias mais longas são bem-vindas.",
+    q7:"Existe restaurante no resort?",
+    a7:"Sim. Palmeras oferece cozinha internacional e pratos a lenha. O Guanico Tiki Bar proporciona um ambiente descontraído.",
+    q8:"Como posso reservar diretamente?",
+    a8:"Visite nossa página de reservas ou entre em contato pelo WhatsApp. É necessário um depósito de 15% conforme as condições confirmadas.",
+    q9:"Quais são os horários de entrada e saída?",
+    a9:"Entrada a partir das 15h e saída ao meio-dia.",
+    guestLabel:"A experiência Guánico",
+    guestTitle:"O que nossos hóspedes mais apreciam.",
+    guestIntro:"Os momentos que tornam uma estadia memorável.",
+    review1title:"Hospitalidade genuína",
+    review1body:"O atendimento amigável, a atenção pessoal e o ambiente acolhedor são muito apreciados pelos hóspedes.",
+    review2title:"Comida memorável",
+    review2body:"A gastronomia está entre os destaques recorrentes dos comentários dos hóspedes.",
+    review3title:"Beleza natural",
+    review3body:"As paisagens, a costa do Pacífico e a tranquilidade são apreciadas pelos visitantes.",
+    reviewNote:"Resumo de comentários recorrentes relatados pelo proprietário, não citações individuais de hóspedes.",
+    finalBadge:"Sua próxima aventura",
+    finalTitle:"Venha pelas ondas. Fique pela sensação.",
+    finalBody:"Descubra o Panamá autêntico no Guánico Beach Resort. Sua próxima escapada inesquecível começa aqui.",
+    explore:"Explorar",
+    directions:"Como chegar ↗",
+    rights:"Todos os direitos reservados.",
+    footerTag:"Um lado diferente do Panamá.",
+    videoError:"Não foi possível carregar o vídeo. Verifique o arquivo MP4.",
+    playError:"Toque em Tentar novamente para reproduzir o vídeo.",
+    threeLoading:"Carregando a experiência 3D...",
+    threeError:"A experiência 3D está indisponível. Continue com o vídeo real."
+};
+
+const localizedSEO = {
+    en:[
+        "Guánico Beach Resort in Panama | Beachfront Hotel, Surf & Adventure",
+        "Discover beachfront accommodation, surfing, wellness and dining in Playa Guánico, Tonosí, Los Santos, Panama."
+    ],
+    es:[
+        "Guánico Beach Resort en Panamá | Hotel frente al mar y surf",
+        "Descubre alojamiento frente al mar, surf, bienestar y gastronomía en Playa Guánico, Tonosí, Los Santos."
+    ],
+    fr:[
+        "Guánico Beach Resort au Panama | Hôtel en bord de mer",
+        "Découvrez notre hôtel, le surf et la gastronomie à Playa Guánico, Tonosí, Panama."
+    ],
+    de:[
+        "Guánico Beach Resort in Panama | Strandhotel und Surfen",
+        "Entdecken Sie unser Strandhotel, Surfen und Gastronomie in Playa Guánico, Panama."
+    ],
+    pt:[
+        "Guánico Beach Resort no Panamá | Hotel à beira-mar",
+        "Descubra hospedagem à beira-mar, surfe e gastronomia em Playa Guánico, Panamá."
+    ]
+};
+
+let currentLanguage = "en";
+let activeStop = 0;
+let noticeKey = "";
+
+function t(key) {
+    return translations[currentLanguage][key]
+        || translations.en[key]
+        || key;
+}
+
+function setLanguage(lang,updateURL = true) {
+
+    if (!Object.prototype.hasOwnProperty.call(translations,lang)) {
+        lang = "en";
+    }
+
+    currentLanguage = lang;
+    document.documentElement.lang = lang;
+    $("language-switcher").value = lang;
+
+    document.querySelectorAll("[data-i18n]").forEach(element => {
+        element.textContent = t(element.dataset.i18n);
+    });
+
+    $("chapter-name").textContent = t("nav" + (activeStop + 1));
+
+    document.title = localizedSEO[lang][0];
+
+    document.querySelector('meta[name="description"]')
+        .content = localizedSEO[lang][1];
+
+    document.querySelector('meta[property="og:title"]')
+        .content = localizedSEO[lang][0];
+
+    document.querySelector('meta[property="og:description"]')
+        .content = localizedSEO[lang][1];
+
+    try {
+        localStorage.setItem("guanico-language",lang);
+    } catch(error) {}
+
+    if (updateURL) {
+        try {
+            const url = new URL(location.href);
+
+            if (lang === "en") {
+                url.searchParams.delete("lang");
+            } else {
+                url.searchParams.set("lang",lang);
+            }
+
+            history.replaceState({},"",url);
+        } catch(error) {}
+    }
+
+    document.querySelectorAll("a[href]").forEach(link => {
+
+        const href = link.getAttribute("href");
+
+        if (!/^(index|booking|dining)\.html(?:[?#]|$)/.test(href)) {
+            return;
+        }
+
+        const page = href.split(/[?#]/)[0];
+        const hash = href.includes("#")
+            ? href.slice(href.indexOf("#"))
+            : "";
+
+        link.href = page +
+            (lang === "en" ? "" : "?lang=" + lang) +
+            hash;
+    });
+
+    if (noticeKey) {
+        $("media-message").textContent = t(noticeKey);
+    }
+
+    if (SITE_URL) {
+        updateCanonical(lang);
+    }
+}
+
+function updateCanonical(lang) {
+
+    const base = new URL(SITE_URL);
+    base.search = "";
+    base.hash = "";
+
+    const canonicalURL = new URL(base);
+
+    if (lang !== "en") {
+        canonicalURL.searchParams.set("lang",lang);
+    }
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+
+    if (!canonical) {
+        canonical = document.createElement("link");
+        canonical.rel = "canonical";
+        document.head.appendChild(canonical);
+    }
+
+    canonical.href = canonicalURL.href;
+
+    document.querySelectorAll("[data-language-alternate]")
+        .forEach(element => element.remove());
+
+    [...Object.keys(translations),"x-default"].forEach(code => {
+
+        const link = document.createElement("link");
+        const url = new URL(base);
+
+        if (code !== "en" && code !== "x-default") {
+            url.searchParams.set("lang",code);
+        }
+
+        link.rel = "alternate";
+        link.hreflang = code;
+        link.href = url.href;
+        link.dataset.languageAlternate = "true";
+
+        document.head.appendChild(link);
+    });
+}
+
+$("language-switcher").addEventListener("change",event => {
+    setLanguage(event.target.value);
+});
+
+/* =========================================
+   MOBILE NAVIGATION
+========================================= */
+
+const menuToggle = $("menu-toggle");
+const mobileNav = $("mobile-nav");
+
+function closeMenu() {
+    mobileNav.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded","false");
+    menuToggle.textContent = "☰";
+}
+
+menuToggle.addEventListener("click",() => {
+    const open = mobileNav.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded",String(open));
+    menuToggle.textContent = open ? "✕" : "☰";
+});
+
+mobileNav.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click",closeMenu);
+});
+
+document.addEventListener("keydown",event => {
+    if (event.key === "Escape") closeMenu();
+});
+
+window.addEventListener("resize",() => {
+    if (innerWidth > 850) closeMenu();
+},{passive:true});
+
+/* =========================================
+   FAQ ACCORDION
+========================================= */
+
+document.querySelectorAll(".faq-item").forEach(item => {
+    item.addEventListener("toggle",() => {
+        if (!item.open) return;
+
+        document.querySelectorAll(".faq-item").forEach(other => {
+            if (other !== item) other.open = false;
+        });
+    });
+});
+
+/* =========================================
+   OPTIMIZED VIDEO CROSSFADE ENGINE
+
+   Important:
+   No scroll-based video seeking.
+   No continuous currentTime assignment.
+   No six simultaneous autoplay decoders.
+========================================= */
+
+const tour = $("tour");
+const stage = $("tour-stage");
+
+const players = [
+    $("video-a"),
+    $("video-b")
+];
+
+const cards = [...document.querySelectorAll(".tour-card")];
+const chapters = [...document.querySelectorAll(".scroll-chapter")];
+const stopButtons = [...document.querySelectorAll(".stop-button")];
+
+let frontPlayer = 0;
+let displayedClip = 0;
+let requestedClip = 0;
+
+let viewingMode = "video";
+let tourVisible = true;
+
+let switchingVideo = false;
+let videoGeneration = 0;
+let pendingController = null;
+let fadeTimer = null;
+let scrollScheduled = false;
+
+players.forEach(video => {
+    video.muted = true;
+    video.defaultMuted = true;
+    video.loop = true;
+    video.playsInline = true;
+    video.autoplay = true;
+});
+
+function showNotice(key,showRetry = true) {
+    noticeKey = key;
+    $("media-message").textContent = t(key);
+    $("media-notice").hidden = false;
+    $("retry-media").hidden = !showRetry;
+}
+
+function hideNotice() {
+    noticeKey = "";
+    $("media-notice").hidden = true;
+}
+
+function shouldPlayVideo() {
+    return viewingMode === "video"
+        && tourVisible
+        && !document.hidden;
+}
+
+async function safePlay(video) {
+
+    if (!shouldPlayVideo()) {
+        video.pause();
+        return;
+    }
+
+    if (reducedMotion) {
+        video.pause();
+        return;
+    }
+
+    await video.play();
+}
+
+function pauseTourVideos() {
+    players.forEach(video => video.pause());
+}
+
+/* Wait until the incoming clip has a decoded frame. */
+
+function waitForVideo(video,signal) {
+
+    return new Promise((resolve,reject) => {
+
+        let timeout;
+
+        function cleanup() {
+            clearTimeout(timeout);
+            video.removeEventListener("loadeddata",ready);
+            video.removeEventListener("canplay",ready);
+            video.removeEventListener("error",failed);
+            signal.removeEventListener("abort",aborted);
+        }
+
+        function ready() {
+            if (video.readyState < 2) return;
+            cleanup();
+            resolve();
+        }
+
+        function failed() {
+            cleanup();
+            reject(new Error("Video loading failed"));
+        }
+
+        function aborted() {
+            cleanup();
+            reject(new DOMException("Cancelled","AbortError"));
+        }
+
+        if (signal.aborted) {
+            aborted();
+            return;
+        }
+
+        video.addEventListener("loadeddata",ready);
+        video.addEventListener("canplay",ready);
+        video.addEventListener("error",failed);
+        signal.addEventListener("abort",aborted,{once:true});
+
+        timeout = setTimeout(failed,12000);
+
+        if (video.readyState >= 2) {
+            ready();
+        }
+    });
+}
+
+/* Update text only when the chapter changes. */
+
+function updateCards(index) {
+
+    activeStop = index;
+
+    cards.forEach((card,i) => {
+
+        const active = i === index;
+
+        card.classList.toggle("active",active);
+        card.inert = !active;
+        card.setAttribute("aria-hidden",String(!active));
+
+        if (active) {
+            card.scrollTop = 0;
+        }
+    });
+
+    stopButtons.forEach((button,i) => {
+
+        const active = i === index;
+
+        button.classList.toggle("active",active);
+
+        if (active) {
+            button.setAttribute("aria-current","step");
+        } else {
+            button.removeAttribute("aria-current");
+        }
+    });
+
+    $("stop-counter").textContent =
+        String(index + 1).padStart(2,"0") + " / 06";
+
+    $("chapter-name").dataset.i18n = "nav" + (index + 1);
+    $("chapter-name").textContent = t("nav" + (index + 1));
+
+    $("progress-fill").style.width =
+        ((index + 1) / 6 * 100) + "%";
+
+    $("progress-track").setAttribute("aria-valuenow",index + 1);
+
+    $("prev-stop").disabled = index === 0;
+    $("next-stop").disabled = index === 5;
+}
+
+/* Cancel unfinished loads without leaving duplicate players running. */
+
+function cancelPendingVideo() {
+
+    videoGeneration++;
+
+    if (pendingController) {
+        pendingController.abort();
+        pendingController = null;
+    }
+
+    clearTimeout(fadeTimer);
+
+    const front = players[frontPlayer];
+    const back = players[1 - frontPlayer];
+
+    front.classList.add("visible");
+    front.style.zIndex = "1";
+
+    back.classList.remove("visible");
+    back.style.zIndex = "0";
+    back.pause();
+
+    switchingVideo = false;
+}
+
+/* Main clip switcher. */
+
+async function switchClip(index,force = false) {
+
+    index = clamp(index,0,CLIPS.length - 1);
+    requestedClip = index;
+
+    if (viewingMode !== "video" || !tourVisible || document.hidden) {
+        return;
+    }
+
+    if (switchingVideo) {
+
+        if (!force) return;
+
+        cancelPendingVideo();
+    }
+
+    if (displayedClip === index && !force) {
+
+        updateCards(index);
+
+        try {
+            await safePlay(players[frontPlayer]);
+            hideNotice();
+        } catch(error) {
+            showNotice("playError");
+        }
+
+        return;
+    }
+
+    switchingVideo = true;
+
+    const generation = ++videoGeneration;
+    const controller = new AbortController();
+
+    pendingController = controller;
+
+    const outgoingIndex = frontPlayer;
+    const incomingIndex = 1 - frontPlayer;
+
+    const outgoing = players[outgoingIndex];
+    const incoming = players[incomingIndex];
+
+    incoming.pause();
+    incoming.classList.remove("visible");
+    incoming.style.zIndex = "2";
+
+    outgoing.style.zIndex = "1";
+
+    incoming.preload = "auto";
+    incoming.src = CLIPS[index];
+    incoming.load();
+
+    try {
+
+        await waitForVideo(incoming,controller.signal);
+
+        if (generation !== videoGeneration) return;
+
+        /* Rapid scrolling: skip obsolete intermediate clips. */
+
+        if (requestedClip !== index) {
+            incoming.pause();
+            switchingVideo = false;
+            pendingController = null;
+            switchClip(requestedClip);
+            return;
+        }
+
+        if (!shouldPlayVideo()) {
+            incoming.pause();
+            switchingVideo = false;
+            pendingController = null;
+            return;
+        }
+
+        await safePlay(incoming);
+
+        if (generation !== videoGeneration) return;
+
+        if (!shouldPlayVideo()) {
+            incoming.pause();
+            switchingVideo = false;
+            pendingController = null;
+            return;
+        }
+
+        if (requestedClip !== index) {
+            incoming.pause();
+            switchingVideo = false;
+            pendingController = null;
+            switchClip(requestedClip);
+            return;
+        }
+
+        hideNotice();
+
+        /*
+            Keep outgoing clip fully visible underneath.
+            Fade incoming clip over it.
+            Prevents black flashes between video clips.
+        */
+
+        requestAnimationFrame(() => {
+
+            if (generation !== videoGeneration) return;
+
+            incoming.classList.add("visible");
+
+            updateCards(index);
+
+            frontPlayer = incomingIndex;
+            displayedClip = index;
+
+            fadeTimer = setTimeout(() => {
+
+                if (generation !== videoGeneration) return;
+
+                outgoing.pause();
+                outgoing.classList.remove("visible");
+                outgoing.style.zIndex = "0";
+
+                incoming.style.zIndex = "1";
+
+                /*
+                    Release inactive media resources.
+                    Only the active clip remains loaded.
+                */
+
+                outgoing.removeAttribute("src");
+                outgoing.preload = "none";
+                outgoing.load();
+
+                switchingVideo = false;
+                pendingController = null;
+
+                if (requestedClip !== displayedClip) {
+                    switchClip(requestedClip);
+                }
+
+            },FADE_DURATION + 50);
+        });
+
+    } catch(error) {
+
+        if (generation !== videoGeneration) return;
+
+        switchingVideo = false;
+        pendingController = null;
+
+        incoming.pause();
+        incoming.classList.remove("visible");
+
+        if (error.name === "AbortError") return;
+
+        if (requestedClip !== index) {
+            switchClip(requestedClip);
+            return;
+        }
+
+        showNotice(
+            error.name === "NotAllowedError"
+                ? "playError"
+                : "videoError"
+        );
+    }
+}
+
+/* Initial video playback. */
+
+players[0].addEventListener("error",() => {
+
+    if (
+        frontPlayer === 0 &&
+        displayedClip === 0 &&
+        !switchingVideo &&
+        players[0].hasAttribute("src")
+    ) {
+        showNotice("videoError");
+    }
+});
+
+$("retry-media").addEventListener("click",() => {
+
+    if (viewingMode === "3d") {
+        setMode("video");
+    }
+
+    switchClip(requestedClip,true);
+});
+
+/* =========================================
+   SCROLL CHAPTER CONTROLLER
+
+   Uses one lightweight scroll update per frame.
+   Video playback remains independent of scroll.
+========================================= */
+
+function headerHeight() {
+    return parseFloat(
+        getComputedStyle(document.documentElement)
+            .getPropertyValue("--header-height")
+    ) || 88;
+}
+
+function tourStart() {
+    return tour.getBoundingClientRect().top
+        + window.scrollY
+        - headerHeight();
+}
+
+function chapterHeight() {
+    return chapters[0].offsetHeight || innerHeight;
+}
+
+function readScroll() {
+
+    scrollScheduled = false;
+
+    const bounds = tour.getBoundingClientRect();
+
+    const visible =
+        bounds.bottom > headerHeight() &&
+        bounds.top < innerHeight;
+
+    if (visible !== tourVisible) {
+
+        tourVisible = visible;
+
+        if (!visible) {
+            cancelPendingVideo();
+            pauseTourVideos();
+            stopThreeAnimation();
+        } else if (viewingMode === "3d") {
+            startThreeAnimation();
+        }
+    }
+
+    const relativeScroll = window.scrollY - tourStart();
+
+    const index = clamp(
+        Math.floor((relativeScroll + 2) / chapterHeight()),
+        0,
+        5
+    );
+
+    if (index !== requestedClip) {
+
+        requestedClip = index;
+
+        if (viewingMode === "video") {
+            switchClip(index);
+        } else {
+            updateCards(index);
+            updateThreeTarget(index);
+        }
+
+    } else if (
+        visible &&
+        viewingMode === "video" &&
+        !switchingVideo &&
+        !document.hidden &&
+        displayedClip !== index
+    ) {
+        switchClip(index);
+    }
+
+    if (
+        visible &&
+        viewingMode === "video" &&
+        !switchingVideo &&
+        displayedClip === index &&
+        players[frontPlayer].paused &&
+        !reducedMotion &&
+        !document.hidden &&
+        !noticeKey
+    ) {
+        safePlay(players[frontPlayer]).catch(() => {
+            showNotice("playError");
+        });
+    }
+}
+
+function scheduleScroll() {
+
+    if (scrollScheduled) return;
+
+    scrollScheduled = true;
+    requestAnimationFrame(readScroll);
+}
+
+window.addEventListener("scroll",scheduleScroll,{passive:true});
+window.addEventListener("resize",scheduleScroll,{passive:true});
+
+function goToStop(index) {
+
+    index = clamp(index,0,5);
+
+    window.scrollTo({
+        top:tourStart() + index * chapterHeight() + 4,
+        behavior:reducedMotion ? "auto" : "smooth"
+    });
+}
+
+stopButtons.forEach(button => {
+    button.addEventListener("click",() => {
+        goToStop(Number(button.dataset.go));
+    });
+});
+
+$("prev-stop").addEventListener("click",() => {
+    goToStop(requestedClip - 1);
+});
+
+$("next-stop").addEventListener("click",() => {
+    goToStop(requestedClip + 1);
+});
+
+$("start-tour").addEventListener("click",() => {
+    goToStop(1);
+});
+
+/* =========================================
+   OPTIONAL THREE.JS MODE
+
+   Loaded on demand instead of on page load.
+   Rendering stops in real-video mode.
+========================================= */
+
+let THREE = null;
+let renderer = null;
+let scene = null;
+let camera = null;
+let ocean = null;
+let poolWater = null;
+let threeReady = false;
+let threePromise = null;
+let threeFrame = null;
+let threeTarget = 0;
+let threePosition = 0;
+let cameraPath = null;
+let lookPath = null;
+let lastThreeTime = 0;
+
+const palmCrowns = [];
+
+async function loadThree() {
+
+    if (threeReady) return;
+
+    if (!threePromise) {
+
+        threePromise = (async () => {
+
+            THREE = await import(
+                "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+            );
+
+            initializeThree();
+
+            threeReady = true;
+
+        })().catch(error => {
+
+            threePromise = null;
+            threeReady = false;
+
+            if (renderer) {
+                renderer.dispose();
+                renderer.domElement.remove();
+                renderer = null;
+            }
+
+            throw error;
+        });
+    }
+
+    return threePromise;
+}
+
+function mat(color,roughness = .85) {
+    return new THREE.MeshStandardMaterial({
+        color,
+        roughness
+    });
+}
+
+function addMesh(geometry,material,x,y,z,parent = scene) {
+
+    const mesh = new THREE.Mesh(geometry,material);
+
+    mesh.position.set(x,y,z);
+    parent.add(mesh);
+
+    return mesh;
+}
+
+function box(w,h,d,x,y,z,material,parent = scene) {
+    return addMesh(
+        new THREE.BoxGeometry(w,h,d),
+        material,x,y,z,parent
+    );
+}
+
+function initializeThree() {
+
+    scene = new THREE.Scene();
+
+    scene.background = new THREE.Color("#e7b890");
+    scene.fog = new THREE.FogExp2("#027373",.0035);
+
+    camera = new THREE.PerspectiveCamera(
+        58,
+        stage.clientWidth / Math.max(1,stage.clientHeight),
+        .1,
+        500
+    );
+
+    renderer = new THREE.WebGLRenderer({
+        antialias:true,
+        powerPreference:"low-power"
+    });
+
+    renderer.setPixelRatio(
+        Math.min(devicePixelRatio,1.35)
+    );
+
+    renderer.setSize(stage.clientWidth,stage.clientHeight);
+
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.15;
+
+    $("world").appendChild(renderer.domElement);
+
+    scene.add(new THREE.HemisphereLight(
+        "#fff1d7",
+        "#356d61",
+        2.2
+    ));
+
+    const sunLight = new THREE.DirectionalLight("#ffc98d",3.2);
+
+    sunLight.position.set(45,35,-90);
+    scene.add(sunLight);
+
+    const sun = addMesh(
+        new THREE.SphereGeometry(7,24,16),
+        new THREE.MeshBasicMaterial({
+            color:"#ffe2a1",
+            fog:false
+        }),
+        40,20,-175
+    );
+
+    /* Sandy terrain */
+
+    const sand = addMesh(
+        new THREE.PlaneGeometry(180,120),
+        mat("#e4c49b"),
+        0,-.1,25
+    );
+
+    sand.rotation.x = -Math.PI / 2;
+
+    const grass = addMesh(
+        new THREE.PlaneGeometry(80,38),
+        mat("#7C931C"),
+        -12,-.06,28
+    );
+
+    grass.rotation.x = -Math.PI / 2;
+
+    /* Animated ocean shader */
+
+    ocean = addMesh(
+        new THREE.PlaneGeometry(350,280,80,65),
+        new THREE.ShaderMaterial({
+
+            uniforms:{
+                time:{value:0},
+                deepColor:{value:new THREE.Color("#027373")},
+                lightColor:{value:new THREE.Color("#16b6b0")}
+            },
+
+            vertexShader:`
+                uniform float time;
+                varying vec3 vPosition;
+                varying float vWave;
+
+                void main() {
+
+                    vec3 p = position;
+
+                    p.z += sin(p.y * .24 + time * 1.4) * .28;
+                    p.z += sin(p.x * .16 + p.y * .12 + time) * .16;
+
+                    vWave = p.z;
+
+                    vec4 world = modelMatrix * vec4(p,1.0);
+
+                    vPosition = world.xyz;
+
+                    gl_Position =
+                        projectionMatrix * viewMatrix * world;
+                }
+            `,
+
+            fragmentShader:`
+                uniform float time;
+                uniform vec3 deepColor;
+                uniform vec3 lightColor;
+
+                varying vec3 vPosition;
+                varying float vWave;
+
+                void main() {
+
+                    float shore = smoothstep(
+                        -110.0,-35.0,vPosition.z
+                    );
+
+                    vec3 color = mix(
+                        deepColor,lightColor,shore
+                    );
+
+                    float wave = sin(
+                        vPosition.z * .85 +
+                        vPosition.x * .15 +
+                        time * 1.8
+                    );
+
+                    float foam = smoothstep(
+                        .78,1.0,wave
+                    ) * shore * .35;
+
+                    color = mix(
+                        color,
+                        vec3(.95,.97,.94),
+                        foam
+                    );
+
+                    float glow = exp(
+                        -abs(vPosition.x - 40.0) * .045
+                    );
+
+                    color = mix(
+                        color,
+                        vec3(1.0,.7,.35),
+                        glow * .2
+                    );
+
+                    gl_FragColor = vec4(color,1.0);
+
+                    #include <tonemapping_fragment>
+                    #include <colorspace_fragment>
+                }
+            `
+        }),
+        0,-.15,-175
+    );
+
+    ocean.rotation.x = -Math.PI / 2;
+
+    /* Wooden boardwalk */
+
+    const wood = mat("#a17a52");
+
+    const plankGeometry = new THREE.BoxGeometry(
+        3.8,.14,.66
+    );
+
+    const boardwalk = new THREE.InstancedMesh(
+        plankGeometry,
+        wood,
+        115
+    );
+
+    const dummy = new THREE.Object3D();
+
+    for (let i = 0;i < 115;i++) {
+
+        dummy.position.set(
+            Math.sin(i * .025) * 1.5,
+            .09,
+            58 - i * .7
+        );
+
+        dummy.updateMatrix();
+        boardwalk.setMatrixAt(i,dummy.matrix);
+    }
+
+    scene.add(boardwalk);
+
+    /* Entrance sign */
+
+    box(.35,5.6,.35,-3.5,2.8,48,wood);
+    box(.35,5.6,.35,3.5,2.8,48,wood);
+    box(7.5,.35,.5,0,5.6,48,wood);
+
+    const signCanvas = document.createElement("canvas");
+
+    signCanvas.width = 1024;
+    signCanvas.height = 360;
+
+    const ctx = signCanvas.getContext("2d");
+
+    ctx.fillStyle = "#027373";
+    ctx.fillRect(0,0,1024,360);
+
+    ctx.strokeStyle = "#7C931C";
+    ctx.lineWidth = 15;
+    ctx.strokeRect(18,18,988,324);
+
+    ctx.fillStyle = "#FFF7F3";
+    ctx.textAlign = "center";
+    ctx.font = "bold 105px Georgia";
+    ctx.fillText("GUÁNICO",512,145);
+
+    ctx.font = "42px Arial";
+    ctx.fillText("BEACH RESORT",512,220);
+
+    const signTexture = new THREE.CanvasTexture(signCanvas);
+
+    signTexture.colorSpace = THREE.SRGBColorSpace;
+
+    addMesh(
+        new THREE.PlaneGeometry(6.8,2.4),
+        new THREE.MeshBasicMaterial({
+            map:signTexture,
+            side:THREE.DoubleSide
+        }),
+        0,4.2,48.25
+    );
+
+    const logo = new Image();
+
+    logo.onload = () => {
+
+        ctx.fillStyle = "#FFF7F3";
+        ctx.fillRect(25,25,974,310);
+
+        const scale = Math.min(
+            880 / logo.width,
+            280 / logo.height
+        );
+
+        const w = logo.width * scale;
+        const h = logo.height * scale;
+
+        ctx.drawImage(
+            logo,
+            (1024 - w) / 2,
+            (360 - h) / 2,
+            w,h
+        );
+
+        signTexture.needsUpdate = true;
+    };
+
+    logo.src = "guanico-logo.png";
+
+    /* Saltwater pool */
+
+    const cream = mat("#FFF7F3");
+    const tile = mat("#027373");
+
+    box(20,.18,13,-13,.1,22,wood);
+    box(14,.3,8.5,-13,.2,22,tile);
+
+    box(15,.3,.5,-13,.35,26.5,cream);
+    box(15,.3,.5,-13,.35,17.5,cream);
+    box(.5,.3,9,-20.4,.35,22,cream);
+    box(.5,.3,9,-5.6,.35,22,cream);
+
+    poolWater = addMesh(
+        new THREE.PlaneGeometry(14,8.5),
+        new THREE.MeshStandardMaterial({
+            color:"#159fa4",
+            roughness:.18,
+            metalness:.2
+        }),
+        -13,.4,22
+    );
+
+    poolWater.rotation.x = -Math.PI / 2;
+
+    /* Cold plunge */
+
+    addMesh(
+        new THREE.CylinderGeometry(1.3,1.3,.85,24),
+        cream,
+        -22,.43,20
+    );
+
+    const plungeWater = addMesh(
+        new THREE.CircleGeometry(1.12,24),
+        mat("#63c5c6",.2),
+        -22,.87,20
+    );
+
+    plungeWater.rotation.x = -Math.PI / 2;
+
+    /* Yoga deck */
+
+    box(9,.35,6,-17,.2,10,wood);
+
+    for (let i = 0;i < 3;i++) {
+        box(
+            .9,.05,2.1,
+            -20 + i * 2.7,.41,10,
+            mat(["#027373","#7C931C","#16D798"][i])
+        );
+    }
+
+    /* Surfboards */
+
+    for (let i = 0;i < 4;i++) {
+
+        const board = addMesh(
+            new THREE.SphereGeometry(1,14,12),
+            mat(["#16D798","#FFF7F3","#e8aa70","#7C931C"][i]),
+            -4.2 + i * .75,1.3,28
+        );
+
+        board.scale.set(.31,1.35,.07);
+        board.rotation.z = -.1;
+    }
+
+    /* Cabanas */
+
+    const roofMaterial = mat("#826144");
+    const glass = mat("#235f62",.2);
+
+    function cabana(x,z,rotation) {
+
+        const group = new THREE.Group();
+
+        group.position.set(x,0,z);
+        group.rotation.y = rotation;
+        scene.add(group);
+
+        box(7.5,.4,8.5,0,.2,0,wood,group);
+        box(6.4,3.4,5.8,0,2.1,.5,cream,group);
+
+        box(2.2,2.5,.12,0,1.75,-2.46,glass,group);
+        box(1.5,1.5,.12,-2.15,2.2,-2.47,glass,group);
+        box(1.5,1.5,.12,2.15,2.2,-2.47,glass,group);
+
+        const leftRoof = box(
+            4.2,.22,8.5,
+            -1.85,4.55,0,
+            roofMaterial,group
+        );
+
+        leftRoof.rotation.z = .44;
+
+        const rightRoof = box(
+            4.2,.22,8.5,
+            1.85,4.55,0,
+            roofMaterial,group
+        );
+
+        rightRoof.rotation.z = -.44;
+
+        for (const px of [-3.3,3.3]) {
+            box(.22,3.3,.22,px,2.05,-3.7,wood,group);
+        }
+    }
+
+    cabana(12,26,.12);
+    cabana(22,12,.2);
+    cabana(12,-2,-.08);
+
+    /* Palmeras restaurant */
+
+    const restaurant = new THREE.Group();
+
+    restaurant.position.set(-14,0,-15);
+    scene.add(restaurant);
+
+    box(15,.3,11,0,.15,0,wood,restaurant);
+
+    for (const x of [-6.5,0,6.5]) {
+        for (const z of [-4.5,4.5]) {
+            box(.3,4.5,.3,x,2.4,z,wood,restaurant);
+        }
+    }
+
+    const restaurantRoof1 = box(
+        8.5,.25,12,
+        -3.8,5.6,0,
+        roofMaterial,restaurant
+    );
+
+    restaurantRoof1.rotation.z = .38;
+
+    const restaurantRoof2 = box(
+        8.5,.25,12,
+        3.8,5.6,0,
+        roofMaterial,restaurant
+    );
+
+    restaurantRoof2.rotation.z = -.38;
+
+    box(8,1.15,1.4,0,.9,2.6,wood,restaurant);
+    box(8.4,.18,1.7,0,1.56,2.6,cream,restaurant);
+
+    for (let i = 0;i < 4;i++) {
+
+        const x = -4.5 + (i % 2) * 9;
+        const z = -3 + Math.floor(i / 2) * 3;
+
+        addMesh(
+            new THREE.CylinderGeometry(.85,.85,.12,16),
+            wood,x,1.05,z,restaurant
+        );
+
+        box(.18,.9,.18,x,.55,z,wood,restaurant);
+    }
+
+    /* Tiki bar */
+
+    const tiki = new THREE.Group();
+
+    tiki.position.set(15,0,-23);
+    scene.add(tiki);
+
+    box(6.8,.25,5.8,0,.12,0,wood,tiki);
+
+    for (const x of [-2.7,2.7]) {
+        for (const z of [-2,2]) {
+            box(.22,3.4,.22,x,1.8,z,wood,tiki);
+        }
+    }
+
+    const tikiRoof = addMesh(
+        new THREE.ConeGeometry(4.6,2.1,4),
+        mat("#b29661"),
+        0,4.4,0,tiki
+    );
+
+    tikiRoof.rotation.y = Math.PI / 4;
+
+    box(5.6,1.15,1.3,0,.85,.8,wood,tiki);
+
+    /* Palm trees */
+
+    const trunkMaterial = mat("#8f7453");
+
+    const leafMaterial = new THREE.MeshStandardMaterial({
+        color:"#7C931C",
+        roughness:.9,
+        side:THREE.DoubleSide
+    });
+
+    function palm(x,z,height) {
+
+        const group = new THREE.Group();
+
+        group.position.set(x,0,z);
+        scene.add(group);
+
+        const curve = new THREE.CatmullRomCurve3([
+            new THREE.Vector3(0,0,0),
+            new THREE.Vector3(.2,height * .4,0),
+            new THREE.Vector3(.6,height * .75,.1),
+            new THREE.Vector3(.9,height,.2)
+        ]);
+
+        addMesh(
+            new THREE.TubeGeometry(curve,10,.17,6,false),
+            trunkMaterial,
+            0,0,0,group
+        );
+
+        const crown = new THREE.Group();
+
+        crown.position.set(.9,height,.2);
+        group.add(crown);
+
+        for (let i = 0;i < 8;i++) {
+
+            const vertices = [];
+            const indices = [];
+            const length = height * .48;
+
+            for (let j = 0;j <= 10;j++) {
+
+                const t = j / 10;
+                const px = t * length;
+                const py = Math.sin(t * Math.PI) * length * .24
+                    - t * t * length * .25;
+
+                const width = Math.sin(t * Math.PI) * length * .12;
+
+                vertices.push(
+                    px,py,-width,
+                    px,py,width
+                );
+
+                if (j < 10) {
+
+                    const a = j * 2;
+
+                    indices.push(
+                        a,a + 2,a + 1,
+                        a + 1,a + 2,a + 3
+                    );
+                }
+            }
+
+            const geometry = new THREE.BufferGeometry();
+
+            geometry.setAttribute(
+                "position",
+                new THREE.Float32BufferAttribute(vertices,3)
+            );
+
+            geometry.setIndex(indices);
+            geometry.computeVertexNormals();
+
+            const leaf = addMesh(
+                geometry,
+                leafMaterial,
+                0,0,0,crown
+            );
+
+            leaf.rotation.y = i / 8 * Math.PI * 2;
+        }
+
+        palmCrowns.push(crown);
+    }
+
+    [
+        [-8,51],[8,49],[-24,34],[-26,18],
+        [-5,13],[6,31],[27,37],[38,17],
+        [32,-13],[22,-28],[-31,-20],[-24,-30],
+        [-7,-28],[7,-29],[42,-25],[-40,0]
+    ].forEach(([x,z],i) => {
+        palm(x,z,6.5 + (i % 4) * .8);
+    });
+
+    /* Six camera stops */
+
+    cameraPath = new THREE.CatmullRomCurve3([
+        new THREE.Vector3(1,3.1,63),
+        new THREE.Vector3(2,4.3,34),
+        new THREE.Vector3(4,6.5,10),
+        new THREE.Vector3(9,5.2,-29),
+        new THREE.Vector3(-2,3.5,-25),
+        new THREE.Vector3(0,3.3,-34)
+    ],false,"centripetal");
+
+    lookPath = new THREE.CatmullRomCurve3([
+        new THREE.Vector3(0,3.7,48),
+        new THREE.Vector3(-13,1.5,22),
+        new THREE.Vector3(19,2.8,8),
+        new THREE.Vector3(10,1.5,-95),
+        new THREE.Vector3(-14,2.7,-15),
+        new THREE.Vector3(40,10,-175)
+    ],false,"centripetal");
+
+    threePosition = activeStop / 5;
+    threeTarget = threePosition;
+
+    renderer.domElement.addEventListener(
+        "webglcontextlost",
+        event => {
+
+            event.preventDefault();
+
+            stopThreeAnimation();
+            threeReady = false;
+            threePromise = null;
+
+            if (renderer) {
+                renderer.dispose();
+                renderer.domElement.remove();
+                renderer = null;
+            }
+
+            setMode("video");
+            showNotice("threeError",false);
+        }
+    );
+}
+
+function updateThreeTarget(index) {
+    threeTarget = index / 5;
+}
+
+function renderThree(now) {
+
+    threeFrame = null;
+
+    if (
+        !threeReady ||
+        viewingMode !== "3d" ||
+        !tourVisible ||
+        document.hidden
+    ) return;
+
+    threeFrame = requestAnimationFrame(renderThree);
+
+    /* Cap 3D rendering at approximately 30 FPS. */
+
+    if (now - lastThreeTime < 32) return;
+
+    const delta = Math.min(
+        (now - lastThreeTime) / 1000,
+        .1
+    );
+
+    lastThreeTime = now;
+
+    threePosition +=
+        (threeTarget - threePosition) *
+        (reducedMotion ? 1 : 1 - Math.exp(-delta * 4));
+
+    threePosition = clamp(threePosition,0,1);
+
+    camera.position.copy(
+        cameraPath.getPoint(threePosition)
+    );
+
+    camera.lookAt(
+        lookPath.getPoint(threePosition)
+    );
+
+    const time = reducedMotion ? 0 : now / 1000;
+
+    ocean.material.uniforms.time.value = time;
+
+    palmCrowns.forEach((crown,i) => {
+        crown.rotation.z = Math.sin(time * .8 + i) * .035;
+    });
+
+    renderer.render(scene,camera);
+}
+
+function startThreeAnimation() {
+
+    if (
+        threeFrame !== null ||
+        !threeReady ||
+        viewingMode !== "3d" ||
+        !tourVisible ||
+        document.hidden
+    ) return;
+
+    lastThreeTime = performance.now();
+    threeFrame = requestAnimationFrame(renderThree);
+}
+
+function stopThreeAnimation() {
+
+    if (threeFrame !== null) {
+        cancelAnimationFrame(threeFrame);
+        threeFrame = null;
+    }
+}
+
+function resizeThree() {
+
+    if (!threeReady || !renderer) return;
+
+    const width = stage.clientWidth;
+    const height = Math.max(1,stage.clientHeight);
+
+    camera.aspect = width / height;
+    camera.fov = width < 600 ? 68 : 58;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize(width,height);
+}
+
+window.addEventListener("resize",resizeThree,{passive:true});
+
+/* =========================================
+   SWITCH BETWEEN REAL VIDEO AND 3D
+========================================= */
+
+let modeGeneration = 0;
+
+async function setMode(mode) {
+
+    const generation = ++modeGeneration;
+
+    if (mode === "3d") {
+
+        $("mode-3d").disabled = true;
+
+        showNotice("threeLoading",false);
+
+        try {
+
+            await loadThree();
+
+            if (generation !== modeGeneration) return;
+
+            cancelPendingVideo();
+            pauseTourVideos();
+
+            viewingMode = "3d";
+
+            stage.classList.add("three-mode");
+
+            updateCards(requestedClip);
+            updateThreeTarget(requestedClip);
+
+            resizeThree();
+            startThreeAnimation();
+
+            hideNotice();
+
+        } catch(error) {
+
+            if (generation !== modeGeneration) return;
+
+            viewingMode = "video";
+
+            stage.classList.remove("three-mode");
+
+            showNotice("threeError",false);
+
+        } finally {
+            $("mode-3d").disabled = false;
+        }
+
+    } else {
+
+        viewingMode = "video";
+
+        stopThreeAnimation();
+
+        stage.classList.remove("three-mode");
+
+        hideNotice();
+
+        switchClip(requestedClip);
+    }
+
+    $("mode-video").classList.toggle(
+        "active",
+        viewingMode === "video"
+    );
+
+    $("mode-3d").classList.toggle(
+        "active",
+        viewingMode === "3d"
+    );
+
+    $("mode-video").setAttribute(
+        "aria-pressed",
+        String(viewingMode === "video")
+    );
+
+    $("mode-3d").setAttribute(
+        "aria-pressed",
+        String(viewingMode === "3d")
+    );
+}
+
+$("mode-video").addEventListener("click",() => {
+    setMode("video");
+});
+
+$("mode-3d").addEventListener("click",() => {
+    setMode("3d");
+});
+
+/* =========================================
+   LAZY-LOADED ABOUT VIDEO
+
+   Loads guanico-6.mp4 only when visible.
+========================================= */
+
+const aboutVideo = $("about-video");
+
+let aboutVisible = false;
+
+function updateAboutVideo() {
+
+    if (
+        !aboutVisible ||
+        document.hidden ||
+        reducedMotion
+    ) {
+        aboutVideo.pause();
+        return;
+    }
+
+    if (!aboutVideo.hasAttribute("src")) {
+        aboutVideo.src = aboutVideo.dataset.src;
+        aboutVideo.preload = "metadata";
+    }
+
+    aboutVideo.play().catch(() => {});
+}
+
+if ("IntersectionObserver" in window) {
+
+    const aboutObserver = new IntersectionObserver(entries => {
+
+        aboutVisible = entries[0].isIntersecting;
+
+        updateAboutVideo();
+
+    },{threshold:.2});
+
+    aboutObserver.observe(aboutVideo);
+}
+
+aboutVideo.addEventListener("error",() => {
+    aboutVideo.hidden = true;
+});
+
+/* =========================================
+   BACKGROUND TAB PERFORMANCE
+
+   Pause media and rendering when hidden.
+========================================= */
+
+document.addEventListener("visibilitychange",() => {
+
+    if (document.hidden) {
+
+        cancelPendingVideo();
+        pauseTourVideos();
+        stopThreeAnimation();
+        aboutVideo.pause();
+
+    } else {
+
+        scheduleScroll();
+
+        if (tourVisible) {
+
+            if (viewingMode === "video") {
+                switchClip(requestedClip);
+            } else {
+                startThreeAnimation();
+            }
+        }
+
+        updateAboutVideo();
+    }
+});
+
+/* =========================================
+   INITIALIZATION
+========================================= */
+
+let savedLanguage = "en";
+
+try {
+    savedLanguage =
+        localStorage.getItem("guanico-language") || "en";
+} catch(error) {}
+
+const requestedLanguage =
+    new URLSearchParams(location.search).get("lang");
+
+setLanguage(requestedLanguage || savedLanguage,false);
+
+$("current-year").textContent = new Date().getFullYear();
+
+updateCards(0);
+readScroll();
+
+if (reducedMotion) {
+
+    players.forEach(video => {
+        video.autoplay = false;
+        video.pause();
+    });
+
+} else {
+
+    safePlay(players[0]).catch(() => {
+        if (shouldPlayVideo()) {
+            showNotice("playError");
+        }
+    });
+}
+
+</script>
+
+</body>
+</html>
